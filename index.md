@@ -23,7 +23,7 @@
 - 中村 拓人：[CSMA/CAにおけるバックオフを用いた接続改善の提案](poster/Takuto_Nakamura.pdf)
 
 <script src="https://utteranc.es/client.js"
-        repo="[ENTER REPO HERE]"
+        repo="MinoruNakazawa/i2lab"
         issue-term="pathname"
         theme="github-light"
         crossorigin="anonymous"
