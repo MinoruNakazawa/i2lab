@@ -21,3 +21,11 @@
 - 谷 　昌彦：[日常的活動に基づく状況認知可能な音声認識システムの研究](poster/Masahiko_Tani.pdf)
 - 栗山 純平：Opendatacamを用いた自動車進行方向検出に関する研究
 - 中村 拓人：[CSMA/CAにおけるバックオフを用いた接続改善の提案](poster/Takuto_Nakamura.pdf)
+
+<script src="https://utteranc.es/client.js"
+        repo="[ENTER REPO HERE]"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
