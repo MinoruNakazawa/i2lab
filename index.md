@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+# 中間発表用ページ (中沢研究室)
 
-You can use the [editor on GitHub](https://github.com/MinoruNakazawa/i2lab/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## 修士2年
+- 佐藤 照大：重要図表を含めた学術論文要約システムの研究
+- 小原 裕輝：
+- 栁澤 理紗：交差点事故における人の判断を考慮したモデルベース自動運転システムの研究
+- 小川 裕生：強化学習による
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 修士1年
+- 本田 彰吾
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MinoruNakazawa/i2lab/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## 学部生
+- 常田
+- 成瀬
+- 平野
+- 櫻井
+- 高場
+- 中山
+- 谷
+- 栗山
+- 中村
