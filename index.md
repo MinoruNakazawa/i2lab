@@ -19,7 +19,7 @@
 - 高場 大輔：[オープンデータを活用した若者向け観光アプリの開発](poster/Daisuke_Takaba.pdf)
 - 中山 僚太：[振動刺激を用いたVRにおけるオブジェクトの質感の提示](poster/Ryouta_Nakayama.pdf)
 - 谷 　昌彦：[日常的活動に基づく状況認知可能な音声認識システムの研究](poster/Masahiko_Tani.pdf)
-- 栗山 純平：Opendatacamを用いた自動車進行方向検出に関する研究
+- 栗山 純平：[OpenDataCamを用いた自動車進行方向検出に関する研究](poster/Junpei_Kuriyama.pdf)
 - 中村 拓人：[CSMA/CAにおけるバックオフを用いた接続改善の提案](poster/Takuto_Nakamura.pdf)
 
 <script src="https://utteranc.es/client.js"
