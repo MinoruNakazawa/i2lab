@@ -22,7 +22,7 @@
 - 9月23日: [中間発表会](index.md)のポスター
 
 ## 過去の研究成果(学生発表)
-- [研究室FaceBook](https://www.facebook.com/nakalab/)
+- [研究室Facebook](https://www.facebook.com/nakalab/)
 
 ## メンバー
 - 2020年メンバーリスト
