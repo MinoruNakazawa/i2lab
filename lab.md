@@ -23,6 +23,7 @@
 
 ## 過去の研究成果(学生発表)
 - [研究室Facebook](https://www.facebook.com/nakalab/)
+- [以前の研究室HP](https://www.kitnet.org/laboratory/)
 
 ## メンバー
 - 2020年メンバーリスト
