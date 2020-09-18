@@ -1,4 +1,4 @@
-# 中沢研究室
+# 中沢研究室　()
 
 ## 概要
 - 場所：金沢工業大学扇ヶ丘キャンパス 
@@ -32,7 +32,7 @@
 
 - 研究室訪問をしたい人は，上記の31号館は一般学生は入館できないため，必ず以下の連絡手段を使って事前に連絡を入れてください．
 
-- 中沢実
+- [中沢実](https://researchmap.jp/read0051201)
   - [メール](mailto:nakazawa@infor.kanazawa-it.ac.jp) nakazawa@infor.kanazawa-it.ac.jp
   - [twitter](https://twitter.com/nakazawa)
   - [Facebook](https://www.facebook.com/minoru.nakazawa.kit)
