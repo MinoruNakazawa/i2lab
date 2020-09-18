@@ -21,12 +21,15 @@
 ## 最近の研究成果
 - 9月23日: [中間発表会](index.md)のポスター
 
+## 過去の研究成果(学生発表)
+- [研究室FaceBook](https://www.facebook.com/nakalab/)
+
 ## メンバー
 - 2020年メンバーリスト
 
 ### 連絡先(コンタクト先)
 - 中沢実
-  - [メール](mailto:nakazawa@infor.kanazawa-it.ac.jp)
+  - [メール](mailto:nakazawa@infor.kanazawa-it.ac.jp) nakazawa@infor.kanazawa-it.ac.jp
   - [twitter](https://twitter.com/nakazawa)
   - [Facebook](https://www.facebook.com/minoru.nakazawa.kit)
   
