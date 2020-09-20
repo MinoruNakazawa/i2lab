@@ -3,11 +3,11 @@
 - 担当教員
   - 中沢 実
 - 連携指導教員
-  - Andres Kwasinski (RIT)
-  - Cory Merkel (RIT)
-  - 松下 臣仁 (国際高専)
+  - Andres Kwasinski ([RIT](https://www.rit.edu/directory/axkeec-andres-kwasinski))
+  - Cory Merkel ([RIT](https://www.rit.edu/directory/cemeec-cory-merkel))
+  - 松下 臣仁 ([国際高専](https://www.ict-kanazawa.ac.jp/staff/matsushita-omihito/))
 - 協力教員
-  - 西川 幸延 (KIT 基礎実技)
+  - 西川 幸延 ([KIT基礎実技教育課程](http://www.kanazawa-it.ac.jp/kyouinroku/a/BEAAG.html))
 ## 外部研究員
   - 客員研究員
     - Tossa P Mebusaya
