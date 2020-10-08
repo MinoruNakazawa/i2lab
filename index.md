@@ -5,6 +5,8 @@
 
  - ショットガン資料: [shotgan.pdf](poster/shotgan.pdf)
 
+![poster](./images/IMG_9898.JPG)
+
 
 ## 修士2年
 - 佐藤 照大：[重要図表を含めた学術論文要約システムの研究](poster/Shodai_Sato.pdf)
