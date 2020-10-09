@@ -24,7 +24,7 @@
 - [大学院進学と学会発表の薦め](graduateschool.md)
 
 ## 最近の研究成果
-- 9月23日: [中間発表会](index.md)のポスター
+- 9月23日: [中間発表会](midterm.md)のポスター
 
 ## 過去の研究成果(学生発表)
 - [研究室Facebook](https://www.facebook.com/nakalab/)

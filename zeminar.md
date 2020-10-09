@@ -1,4 +1,6 @@
 # 専門ゼミで実施する内容
+![ゼミ風景](images/IMG_9847.JPG)
+
 ## PD3に必要な勉強会
 - 機械学習について (PRML勉強会)
 - IoTについて　(Cisco オンライン講座 / AWS / M5Stack / M5Stick / NVIDIA Jetson )
