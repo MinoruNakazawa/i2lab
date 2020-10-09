@@ -1,37 +1,52 @@
-# 中間発表用ページ (中沢研究室)
- 100秒/人のショットガンスタイルで発表をします．
- 詳しいポスター資料については，以下の研究タイトルのリンクにあります．
+# 中沢研究室
+
+## 概要
+- 場所：金沢工業大学扇ヶ丘キャンパス 
+  - 31号館202
+  - 31号館204
+  - (注意事項)
+     - *許可学生のみしか入館できない場所*ですので，直接来室の場合は*事前に連絡必要*
+![31-202正面](./images/IMG_9896.JPG)
+
+- 見学・相談可能時刻
+  - 10月9日 10:00 - 15:00
+    - 午前中は対応可能．午後は見学で埋まりました．(10/08 AM 9:00)
+
+## 主な研究内容
+- 脳活動を用いたHMI(ヒューマンマシンインタフェース)に関する研究
+- 画像認識・音声認識を用いた行動理解に関する研究
+- ネットワークとセキュリティに関する研究
+- 多くの研究は，*学生と一緒にテーマを考えていく事を基本としています*
+
+## 3年生へのメッセージ
+- [中沢研究室の方針の説明](message.md)
+- [専門ゼミで実施する事](zeminar.md)
+- [大学院進学と学会発表の薦め](graduateschool.md)
+
+## 最近の研究成果
+- 9月23日: [中間発表会](midterm.md)のポスター
+
+## 過去の研究成果(学生発表)
+- [研究室Facebook](https://www.facebook.com/nakalab/)
+- [以前の研究室HP](https://www.kitnet.org/laboratory/)
+
+## メンバー
+- [2020年メンバーリスト](member2020.md)
+
+## 担当教員の授業
+- 分散システム(3年前期)
+- 情報工学専門実験演習A(ネットワーク演習)(3年前期後期)
+- 情報工学応用(4年次前期)
+- IoT特論(大学院後期)
+- グローバルイノベーション統合特論(大学院夏季)
 
 
- - ショットガン資料: [shotgan.pdf](poster/shotgan.pdf)
+## 連絡先(コンタクト先)
 
-![poster](./images/IMG_9898.JPG)
+- 研究室訪問をしたい人は，上記の31号館は一般学生は入館できないため，必ず以下の連絡手段を使って事前に連絡を入れてください．
 
-
-## 修士2年
-- 佐藤 照大：[重要図表を含めた学術論文要約システムの研究](poster/Shodai_Sato.pdf)
-- 小原 裕輝：[ラベル境界線を利用した距離学習の点群モデルへの適用](poster/Yuuki_Kohara.pdf)
-- 栁澤 理紗：[交差点事故における人の判断を考慮したモデルベース自動運転システムの研究](poster/Risa_Yamagizawa.pdf)
-- 小川 裕生：[強化学習によるHybridUAVの遷移飛行を考慮したエネルギー効率化の研究](poster/Yuuki_Ogawa.pdf)
-
-## 修士1年
-- 本田 彰吾：[加速度センサーを用いた声帯振動による母音識別](poster/Shogo_Honda.pdf)
-
-## 学部生
-- 常田 友貴：[脳波における事象関連電位(ERP)を用いた音声入力修正システムの研究](poster/Yuuki_Tokita.pdf)
-- 成瀬 祥馬：[音源分離を用いた屋外における音響認識システムの開発](poster/Shoma_Naruse.pdf)
-- 平野 哲也：[LRF搭載マルチロボットを用いた環境地図生成効率化の研究](poster/Tetsuya_Hirano.pdf)
-- 櫻井 湧太：[Blockchainのトランザクションを利用した人事総合評価システムの研究](poster/Yuuta_Sakurai.pdf)
-- 高場 大輔：[オープンデータを活用した若者向け観光アプリの開発](poster/Daisuke_Takaba.pdf)
-- 中山 僚太：[振動刺激を用いたVRにおけるオブジェクトの質感の提示](poster/Ryouta_Nakayama.pdf)
-- 谷 　昌彦：[日常的活動に基づく状況認知可能な音声認識システムの研究](poster/Masahiko_Tani.pdf)
-- 栗山 純平：[OpenDataCamを用いた自動車進行方向検出に関する研究](poster/Junpei_Kuriyama.pdf)
-- 中村 拓人：[CSMA/CAにおけるバックオフを用いた接続改善の提案](poster/Takuto_Nakamura.pdf)
-
-<script src="https://utteranc.es/client.js"
-        repo="MinoruNakazawa/i2lab"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
+- [中沢実](https://researchmap.jp/read0051201)
+  - [メール](mailto:nakazawa@infor.kanazawa-it.ac.jp) nakazawa@infor.kanazawa-it.ac.jp
+  - [twitter](https://twitter.com/nakazawa)
+  - [Facebook](https://www.facebook.com/minoru.nakazawa.kit)
+  
