@@ -1,6 +1,6 @@
 # 研究公開情報 (中沢研究室)
 
-![poster](./images/IMG_9898.JPG)
+![poster](./images/IMG_9905.JPG)
 
 ##  中間発表時(2020/09/23)のショットガン資料
  - ショットガン資料: [shotgan.pdf](poster/shotgan.pdf)
