@@ -1,5 +1,20 @@
 # 中沢研究室
 
+## ニュース
+- 11月13日 [DPSWS2020](https://www.dpsws.org/2020/)
+
+- 11月11日[AIセンサーの公開](https://www.kanazawa-it.ac.jp/kitnews/2020/1104_nakazawa.html)
+  - [@ITより](https://www.atmarkit.co.jp/ait/articles/2011/06/news030.html)
+  - [リセマム](https://response.jp/article/2020/11/09/340146.html)
+  - [Yahoo!ニュース](https://news.yahoo.co.jp/articles/32ef74d6de09b33be0e0a0bd26eab61d36cdd99a)
+  - [グノシー](https://gunosy.com/articles/ew5E5)
+  - [センサイト](http://sensait.jp/14670/)
+  - [カービュー](https://carview.yahoo.co.jp/news/detail/2597bcdc3e289d38285b7ee3aae74be8f67015bf/)
+  - [NHK NEWS WEB](https://www3.nhk.or.jp/lnews/kanazawa/20201111/3020006493.html)
+  - [中日新聞](https://www.chunichi.co.jp/article/152717)
+  - [テレビ金沢](https://news.yahoo.co.jp/articles/4da0f755dc2d2fad9545c5f53b1f4f734f23fd9a)
+
+
 ## 概要
 - 場所：金沢工業大学扇ヶ丘キャンパス 
   - 31号館202
