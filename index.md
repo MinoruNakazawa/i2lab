@@ -46,7 +46,7 @@
 - [以前の研究室HP](https://www.kitnet.org/laboratory/)
 
 ## メンバー
-- 2021年メンバーリスト ※ underconstuct
+- 2021年メンバーリスト ※ under constuct
 - [2020年メンバーリスト](member2020.md)
 
 
