@@ -17,7 +17,7 @@
 - 戸河 圭太：[コンテナベースIoT基盤に関する研究](poster2021/01_container_based.pdf)
 - 山本 隼矢：[スナップショットの高速化手法の提案](poster2021/02_snapshot.pdf)
 - 大畑 誠弥：[インターネットに依存しないLocation-based AR基盤の構築](poster2021/03_LAAR.pdf)
-- 片瀬 拓海：[Unikernelを用いたバックエンド基盤の構築](poster2021/04_LAAR.pdf)
+- 片瀬 拓海：[Unikernelを用いたバックエンド基盤の構築](poster2021/04_Unikernel.pdf)
 - 嶋田 壮志：[Return-Oriented Programmingによる難読化手法の検証](poster2021/05_ROP.pdf)
 - 千村 剛芳：[DOM BASED XSS対策におけるTrusted Typesの調査及び検証と構築支援手法の提案](poster2021/06_DOM_Based_Xss.pdf)
 - 鈴木 大志：[AutoVCを用いたZeroshotリアルタイム音質変換](poster2021/07_AutoVC.pdf)
