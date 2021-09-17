@@ -36,14 +36,19 @@
 
 ## 最近の研究成果
 - 研究室情報2021: [ポスター資料](midterm2021.mde)
+
+<!--
 - 研究室情報2020: [ポスター資料](midterm.md)
+-->
 
 ## 過去の研究成果(学生発表)
 - [研究室Facebook](https://www.facebook.com/nakalab/)
 - [以前の研究室HP](https://www.kitnet.org/laboratory/)
 
 ## メンバー
+- 2021年メンバーリスト ※ underconstuct
 - [2020年メンバーリスト](member2020.md)
+
 
 ## 担当教員の授業
 - 分散システム(3年前期)
