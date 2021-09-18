@@ -2,18 +2,22 @@
 
 ![poster](./images/IMG_9905.JPG)
 
-##  中間発表時(2021/09/21)のポスター資料
+## 中間発表時(2021/09/21)のポスター資料
 
 ## 研究公開資料
 
 ### 修士2年
-- 本田 彰吾
-- Joseph
+
+- 本田 彰吾：[Word’s Prediction from Pre-Speech EEG Using a Machine Learning Model](honda_midterm.pdf)
+- Joseph Zonghi：[Real-Time Brainwave Language Classifier Using an FPGA-Based Neural Network
+](poster2021/Zonghi_Midterm.pdf)
 
 ### 修士1年
+
 - 常田 友貴：[脳波を利用したオンライン講演の感情フィードバック](poster2021/16_eeg.pdf)
 
 ### 学部生
+
 - 戸河 圭太：[コンテナベースIoT基盤に関する研究](poster2021/01_container_based.pdf)
 - 山本 隼矢：[スナップショットの高速化手法の提案](poster2021/02_snapshot.pdf)
 - 大畑 誠弥：[インターネットに依存しないLocation-based AR基盤の構築](poster2021/03_LAAR.pdf)
@@ -29,9 +33,6 @@
 - 安達 聡子：[遠距離恋愛支援システム：遠隔における非言語コミュニケーション手法の提案](poster2021/13_Remote_comm.pdf)
 - 渡辺 魁：[交差点における深層学習を用いた交通量調査のカウンターラインの最適化手法の提案](poster2021/14_counter.pdf)
 - 中野 勝章：[交差点の交通量調査におけるカメラ設置位置の信頼性の提示](poster2021/15_camera.pdf)
-
-
-
 
 <script src="https://utteranc.es/client.js"
         repo="MinoruNakazawa/i2lab"
