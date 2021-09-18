@@ -9,8 +9,7 @@
 ### 修士2年
 
 - 本田 彰吾：[Word’s Prediction from Pre-Speech EEG Using a Machine Learning Model](honda_midterm.pdf)
-- Joseph Zonghi：[Real-Time Brainwave Language Classifier Using an FPGA-Based Neural Network
-](poster2021/Zonghi_Midterm.pdf)
+- Joseph Zonghi：[Real-Time Brainwave Language Classifier Using an FPGA-Based Neural Network](poster2021/Zonghi_Midterm.pdf)
 
 ### 修士1年
 
