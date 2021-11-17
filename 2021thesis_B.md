@@ -1,5 +1,13 @@
+# 2021年度　テーマ一覧
+
+## 博士3年生
+- Integration of E-portfolio into General Education Classroom and Automate Classification Model for E-portfolio 
+(一般教養科目へのe-Portfolioの導入と分類モデルの自動化に関する研究)
+
 ## 修士2年生
 - 人の脳波と声帯振動を用いたサイレントスピーチインターフェースの開発 ( Word's Prediction from Pre-Speech EEG Using a Machine Learning Model)
+
+- Analyzing and classifying human EEG signals using FPGA hardware-based neural network and preprocessing methodologies
 
 ## 学部生4年生
 
