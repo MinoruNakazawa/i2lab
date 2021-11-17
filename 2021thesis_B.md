@@ -9,6 +9,10 @@
 
 - Analyzing and classifying human EEG signals using FPGA hardware-based neural network and preprocessing methodologies
 
+## 修士1年生
+- 脳波を利用したオンライン講演の感情フィードバック (motional Feedback in Online Lectures Using EEG)
+
+
 ## 学部生4年生
 
 - 拡張性と柔軟性を両立したコンテナベースアドホックIoT基盤の提案
