@@ -37,12 +37,13 @@
 - 研究室情報2021: [ポスター資料](midterm2021.md) ※中間発表時(2021/09/20時点)
 - 研究室情報2020: [ポスター資料](midterm.md) ※中間発表時(2020/09/20時点)
 
+
 ## 過去の研究成果(学生発表)
 - [研究室Facebook](https://www.facebook.com/nakalab/)
 - [以前の研究室HP](https://www.kitnet.org/laboratory/)
 
 ## メンバー
-- 2021年メンバーリスト ※ under constuct
+- [2021年メンバーリスト](member2021.md)
 - [2020年メンバーリスト](member2020.md)
 
 
