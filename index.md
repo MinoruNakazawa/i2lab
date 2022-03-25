@@ -43,6 +43,7 @@
 - [以前の研究室HP](https://www.kitnet.org/laboratory/)
 
 ## メンバー
+- [2022年メンバーリスト](member2022.md)
 - [2021年メンバーリスト](member2021.md)
 - [2020年メンバーリスト](member2020.md)
 
