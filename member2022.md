@@ -9,8 +9,9 @@
 - 連携指導教員
   - Andres Kwasinski ([RIT](https://www.rit.edu/directory/axkeec-andres-kwasinski))
   - Cory Merkel ([RIT](https://www.rit.edu/directory/cemeec-cory-merkel))
+  - Dongfang Liu ([RIT](https://www.rit.edu/directory/dxleec-dongfang-liu))
   - 西川 幸延 ([KIT基礎実技教育課程](http://www.kanazawa-it.ac.jp/kyouinroku/a/BEAAG.html))
-   - 松下 臣仁 ([ICT国際高専](https://www.ict-kanazawa.ac.jp/staff/matsushita-omihito/))
+  - 松下 臣仁 ([ICT国際高専](https://www.ict-kanazawa.ac.jp/staff/matsushita-omihito/))
 
 ## 大学院生
 - 博士前期課程
