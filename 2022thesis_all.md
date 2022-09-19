@@ -1,7 +1,7 @@
 # 2022年度　テーマ一覧
 
 ## 教員
-- 計算量削減型強化学習を用いた無線周波数帯共有システム(※RITにて鋭意構築中)
+- 深層強化学習を用いた5G対応可能な動的周波数共有メカニズムの構築(※RITにて鋭意構築中)
 
 ## 修士2年生
 - [Towards Real-Time Classification of Human Imagined Language](poster2022/joseph.pdf)
