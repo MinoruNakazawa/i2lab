@@ -4,7 +4,7 @@
 - 深層強化学習を用いた5G対応可能な動的周波数共有メカニズムの構築(※RITにて鋭意構築中)
 
 ## 修士2年生
-- [Towards Real-Time Classification of Human Imagined Language](poster2022/joseph.pdf)
+- [Towards Real-Time Classification of Human Imagined Language](poster2022/joseph_poster.pdf)
 - [脳波を利用したオンライン講演の感情フィードバック (Emotional Feedback in Online Lectures Using EEG](poster2022/honda.pdf)
 
 ## 修士1年生
