@@ -5,7 +5,7 @@
 
 ## 修士2年生
 - [Towards Real-Time Classification of Human Imagined Language](poster2022/joseph_poster.pdf)
-- [脳波を利用したオンライン講演の感情フィードバック (Emotional Feedback in Online Lectures Using EEG](poster2022/honda.pdf)
+- [Speech Feature Analysis and Discrimination in Biological Information](poster2022/honda.pdf)
 - [脳波とAIを利用した感情認識の研究](poster2022/tokita.pdf)
 
 ## 修士1年生
