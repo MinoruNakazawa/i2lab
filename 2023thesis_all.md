@@ -14,7 +14,8 @@
 
 ## 修士1年
 - [Real-time detection of unsafe forklift behavior in the warehouse based on Deep Learning and Pose Estimation](poster2023/M1_Aprak.pdf)
--[FPGAを含むシステム用のFPGA回路の部分的難読化について](poster2023/M1_kitagawa.pdf)
+
+- [FPGAを含むシステム用のFPGA回路の部分的難読化について](poster2023/M1_kitagawa.pdf)
 
 ## 学部4年
 - [自律移動ロボットのUWBを用いた自己位置推定の提案](poster2023/B4_fujino.pdf)
