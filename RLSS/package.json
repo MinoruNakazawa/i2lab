@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "mqtt": "^5.7.2"
+  }
+}
