@@ -1,4 +1,4 @@
-const mqtt = require('mqtt');
+// const mqtt = require('mqtt');
 
 // MQTTブローカーのURL
 const brokerUrl = 'mqtt://broker.hivemq.com';
