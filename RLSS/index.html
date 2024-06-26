@@ -11,7 +11,7 @@
 
     <script>
         <!-- Broker Host Name or IP Address : Port -->
-        var client = mqtt.connect('wss://broker.hivemq.com:8000');
+        var client = mqtt.connect('ws://broker.emqx.io:8083/mqtt');
 
         client.on('connect', () => {
             console.log('connected');
