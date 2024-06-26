@@ -1,10 +1,10 @@
-// const mqtt = require('mqtt');
+import { connect } from 'mqtt';
 
 // MQTTブローカーのURL
 const brokerUrl = 'mqtt://broker.hivemq.com';
 
 // MQTTクライアントの作成
-const client = mqtt.connect(brokerUrl);
+const client = connect(brokerUrl);
 
 // 接続時のイベントハンドラ
 client.on('connect', () => {
