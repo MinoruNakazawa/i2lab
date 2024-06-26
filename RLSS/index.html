@@ -15,7 +15,7 @@
 
         client.on('connect', () => {
             console.log('connected');
-            client.subscribe('test');
+            client.subscribe('KIT/HeartBeat');
         });
 
         client.on('message', (topic, message) => {
