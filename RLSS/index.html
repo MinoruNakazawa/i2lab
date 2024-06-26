@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MQTT.js Test</title>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+</head>
+<body>
+    <p>MQTT.js Test</p>
+    
+    <input type="button" value="Publish" onclick="OnButtonClick()"/>
+
+    <script>
+        <!-- Broker Host Name or IP Address : Port -->
+        var client = mqtt.connect('ws://broker.hivemq.com:8000/mqtt');
+
+        client.on('connect', () => {
+            console.log('connected');
+            client.subscribe('test');
+        });
+
+        client.on('message', (topic, message) => {
+            console.log(topic + ' : ' + message);
+        });
+
+        function OnButtonClick() {
+            console.log('onClick');
+            client.publish('mqtt/demo', 'hello world!');
+        }
+
+    </script>
+</body>
+</html>
