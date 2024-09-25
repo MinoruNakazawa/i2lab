@@ -8,6 +8,11 @@
 - 個別に担当教員(中沢)と相談が必要な場合は、メールにてまずは連絡ください。
 
 - [2024年度　ゼミ生の研究テーマ一覧について](2024thesis_all.md)]
+  - 東京ビックサイトにてJapanRobotWeekにて展示してきました．
+  - [展示の様子-Youtube](https://youtu.be/OAVhq2khJrE)  
+  - [遠距離恋愛支援システムがitmediaに掲載されました](https://www.itmedia.co.jp/aiplus/articles/2409/19/news180.html)
+  - [UWB通信を用いたロボットの自己位置推定が日刊工業新聞に掲載されした](https://www.nikkan.co.jp/articles/view/00725287)
+
 - [2023年度　ゼミ生の研究テーマ一覧について](2023thesis_all.md)
 
 
