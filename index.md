@@ -15,7 +15,9 @@
     - [UWB通信を用いたロボットの自己位置推定が日刊工業新聞に掲載されました](https://www.nikkan.co.jp/articles/view/00725287)
 
 - [2023年度　ゼミ生の研究テーマ一覧について](2023thesis_all.md)
-
+  - [【学部4年次に取り組んだ研究が情報処理学会論文誌に採録】](https://www.kanazawa-it.ac.jp/kitnews/2024/0215_Zero-shot_Real-time_Voice_Conversion.html?_ga=2.85867999.735431080.1727136350-2011404706.1707813663)
+  - [脳波を用いた痛み部位の客観的推定で90％前後の正解率](https://www.kanazawa-it.ac.jp/kitnews/2024/0202_Evaluation_of_Objective_estimation_of_Pain_location_using_EEG.html)
+  - [中野君がBest Session Presentation Award受賞](https://www.kanazawa-it.ac.jp/kitnews/2024/0111_IEEE_ICCE2024.html)
 
 <!--
 ## 指導教員による中沢研究室とは
