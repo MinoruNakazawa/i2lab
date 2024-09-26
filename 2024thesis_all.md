@@ -1,5 +1,13 @@
 # 2024年度　テーマ一覧
 
+## 博士2年生
+
+## 修士2年生
+
+-[Smart Warehouse Safety: Computer Vision for Forklift Driver Monitoring in Warehouse Setting](poster2024/JRW2024_APIRAK_Poster.pdf)
+
+-[LogicLocking による FPGA 回路の階層的な保護を目的と した回路設計情報難読化](poster2024/DPSWS_kitagawa.pdf)
+
 ## 学部4年生
 
 ### 深層学習関係
