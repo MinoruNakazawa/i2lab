@@ -4,9 +4,9 @@
 
 ## 修士2年生
 
--[Smart Warehouse Safety: Computer Vision for Forklift Driver Monitoring in Warehouse Setting](poster2024/JRW2024_APIRAK_Poster.pdf)
+- [Smart Warehouse Safety: Computer Vision for Forklift Driver Monitoring in Warehouse Setting](poster2024/JRW2024_APIRAK_Poster.pdf)
 
--[LogicLocking によるFPGA回路の階層的な保護を目的とした回路設計情報難読化](poster2024/DPSWS_kitagawa.pdf)
+- [LogicLocking によるFPGA回路の階層的な保護を目的とした回路設計情報難読化](poster2024/DPSWS_kitagawa.pdf)
 
 ## 学部4年生
 
