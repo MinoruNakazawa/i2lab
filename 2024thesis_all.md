@@ -13,7 +13,7 @@
 ### 深層学習関係
 - [3次元物体認識と都市3Dモデルを組み合わせた交差点の3D空間化の提案](poster2024/JRW2024_tawa_poster.pdf)
 - [画像処理を用いた教員行動に対する生徒反応記録システム](poster2024/oosima_poster.pdf)
-- 時系列データ対応可能なオープンボキャブラリー物体検出システム
+- [時系列データ対応可能なオープンボキャブラリー物体検出システム](poster2024/maruyama_poster.pdf)
 - [日本語を母国語としない人向けの表現簡易化変換システム](poster2024/yukiueda_poster.pdf)
 - [深層学習を用いた複数音を対象とする伴奏生成システム](poster2024/hanafusa_poster.pdf)
 
