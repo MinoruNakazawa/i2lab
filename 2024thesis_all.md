@@ -20,8 +20,8 @@
 ### 知能ロボット・UWB関係
 
 - [UWB通信を用いたロボットの自己位置推定の提案](poster2024/JRW2024_poster_okuse.pdf)
-- 室内図面を用いた経路計画グラフ作成手法の提案 
-- センサーフュージョンによる工場内ロボットの自己位置推定と障害物回避の提案
+- [室内図面を用いた経路計画グラフ作成手法の提案](poster2024/sotaono_poster.pdf) 
+- [センサーフュージョンによる工場内ロボットの自己位置推定と障害物回避の提案](poster2024/harada_poster.pdf)
 - [UWBの位置推定によるAR描画情報の取得の自動化](poster2024/ichimura_poster.pdf)
 - [遠距離恋愛支援システム　～ハグ動作の改善と顔認証システム～](poster2024/JPW2024_poster_sakashita.pdf)
 
