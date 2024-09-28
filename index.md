@@ -6,14 +6,18 @@
   - 9月26日から，平日であれば，いつでもOK(9:00-18:00 ただし外出していることもあります)。確実に捕まえる場合はメールしてください。
 - 研究室配属可能人数:14名+a
 - 個別に担当教員(中沢)と相談が必要な場合は、メールにてまずは連絡ください。
+----
 - 2024年度　研究室コンテンツ
   - [2024年度　ゼミ生の研究テーマ一覧について](2024thesis_all.md)
-  - [M2のアピラクさんがBest Paper Awardを取りました](https://www.kanazawa-it.ac.jp/kitnews/2024/0823_iwmca2024.html)
   - [東京ビックサイトにてJapanRobotWeekにて展示してきました．](https://www.kanazawa-it.ac.jp/kitnews/2024/0910_nakazawa.html)
     - [展示の様子-Youtube](https://youtu.be/OAVhq2khJrE)  
     - [遠距離恋愛支援システムがitmediaに掲載されました](https://www.itmedia.co.jp/aiplus/articles/2409/19/news180.html)
     - [UWB通信を用いたロボットの自己位置推定が日刊工業新聞に掲載されました](https://www.nikkan.co.jp/articles/view/00725287)
+  - IWMCA2024にて，中沢研究室の修士Apirakさん，学部奥瀬さん，中沢教授が論文が再録され，口頭発表を行ってきました．
+    - Apirakさんが[IWMCA2024で最優秀論文賞受賞](https://www.kanazawa-it.ac.jp/kitnews/2024/0823_iwmca2024.html)
 
+
+---
 - 2023年度　研究室コンテンツ
 
   - [2023年度　ゼミ生の研究テーマ一覧について](2023thesis_all.md)
