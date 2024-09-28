@@ -6,6 +6,7 @@
   - 9月26日から，平日であれば，いつでもOK(9:00-18:00 ただし外出していることもあります)。確実に捕まえる場合はメールしてください。
 - 研究室配属可能人数:14名+a
 - 個別に担当教員(中沢)と相談が必要な場合は、メールにてまずは連絡ください。
+
 ----
 ### 2024年度　研究室コンテンツ
   - [2024年度　ゼミ生の研究テーマ一覧について](2024thesis_all.md)
@@ -24,6 +25,11 @@
   - [【学部4年次に取り組んだ研究が情報処理学会論文誌に採録】](https://www.kanazawa-it.ac.jp/kitnews/2024/0215_Zero-shot_Real-time_Voice_Conversion.html?_ga=2.85867999.735431080.1727136350-2011404706.1707813663)
   - [脳波を用いた痛み部位の客観的推定で90％前後の正解率](https://www.kanazawa-it.ac.jp/kitnews/2024/0202_Evaluation_of_Objective_estimation_of_Pain_location_using_EEG.html)
   - [中野君がBest Session Presentation Award受賞](https://www.kanazawa-it.ac.jp/kitnews/2024/0111_IEEE_ICCE2024.html)
+  - [Location-based AR基盤開発の最新成果を2023国際ロボット展でデモ](https://www.kanazawa-it.ac.jp/kitnews/2023/1106_nakazawa.html)
+  - [米国RIT主催の大学対抗疑似サイバー攻撃コンテストに情報工学の大学院生・学部生が初挑戦](https://www.kanazawa-it.ac.jp/kitnews/2023/1031_CPTC.html)
+  - [中野 勝章さんと渡辺 魁さん、中沢 実教授の共著論文が情報処理学会 論文誌ジャーナルの 「特選論文」として表彰されました](https://www.kanazawa-it.ac.jp/kitnews/2023/0825_nakazawa.html)
+
+----
 
 <!--
 ## 指導教員による中沢研究室とは
