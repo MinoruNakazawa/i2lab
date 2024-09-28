@@ -7,7 +7,7 @@
 - 研究室配属可能人数:14名+a
 - 個別に担当教員(中沢)と相談が必要な場合は、メールにてまずは連絡ください。
 ----
-- 2024年度　研究室コンテンツ
+### 2024年度　研究室コンテンツ
   - [2024年度　ゼミ生の研究テーマ一覧について](2024thesis_all.md)
   - [東京ビックサイトにてJapanRobotWeekにて展示してきました．](https://www.kanazawa-it.ac.jp/kitnews/2024/0910_nakazawa.html)
     - [展示の様子-Youtube](https://youtu.be/OAVhq2khJrE)  
@@ -18,7 +18,7 @@
 
 
 ---
-- 2023年度　研究室コンテンツ
+### 2023年度　研究室コンテンツ
 
   - [2023年度　ゼミ生の研究テーマ一覧について](2023thesis_all.md)
   - [【学部4年次に取り組んだ研究が情報処理学会論文誌に採録】](https://www.kanazawa-it.ac.jp/kitnews/2024/0215_Zero-shot_Real-time_Voice_Conversion.html?_ga=2.85867999.735431080.1727136350-2011404706.1707813663)
