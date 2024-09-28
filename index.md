@@ -6,8 +6,8 @@
   - 9月26日から，平日であれば，いつでもOK(9:00-18:00 ただし外出していることもあります)。確実に捕まえる場合はメールしてください。
 - 研究室配属可能人数:14名+a
 - 個別に担当教員(中沢)と相談が必要な場合は、メールにてまずは連絡ください。
-
-- [2024年度　ゼミ生の研究テーマ一覧について](2024thesis_all.md)
+- 2024年度　研究室コンテンツ
+  - [2024年度　ゼミ生の研究テーマ一覧について](2024thesis_all.md)
   - [M2のアピラクさんがBest Paper Awardを取りました](https://www.kanazawa-it.ac.jp/kitnews/2024/0823_iwmca2024.html)
   - [東京ビックサイトにてJapanRobotWeekにて展示してきました．](https://www.kanazawa-it.ac.jp/kitnews/2024/0910_nakazawa.html)
     - [展示の様子-Youtube](https://youtu.be/OAVhq2khJrE)  
