@@ -10,6 +10,7 @@
 ----
 
 ### 2024年度　研究室コンテンツ
+  - [情報処理学会論文誌に中沢研究室OB清水君と中沢教授の共著論文が掲載](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=240021&item_no=1&page_id=13&block_id=8)
   - [2024年度　ゼミ生の研究テーマ一覧について](2024thesis_all.md)
   - [東京ビックサイトにてJapanRobotWeekにて展示してきました．](https://www.kanazawa-it.ac.jp/kitnews/2024/0910_nakazawa.html)
     - [展示の様子-Youtube](https://youtu.be/OAVhq2khJrE)  
