@@ -18,8 +18,10 @@
 ### 2025年度　研究室コンテンツ
 - [2025年度　ゼミ生の研究テーマ一覧について](2025thesis_all.md)
 - [東京ビックサイトにて開催される国際ロボット展に展示します](https://irex.nikkan.co.jp/)
-- [質問者の感情も機械学習で分析し、音声や表情で回答。 進化したAIエージェント「AI沢みのり」](https://www.kanazawa-it.ac.jp/kitnews/2025/0711_AI_Agent.html)
+- [質問者の感情も機械学習で分析し、音声や表情で回答。 進化したAIエージェント「AI沢みのり」](https://www.kanazawa-it.ac.jp/kitnews/2025/0711_AI_Agent.htmls)
 - [国際会議ISGC2025にて中沢研究室院生 Hatato Ogawaが発表した論文がPoSにFull Paper採録]()
+- [共同開発UWB、LiDAR、超音波のセンサーミックスで位置情報取得巡視や点検など「千差万別」の汎用性に期待](https://bcreer.betsukawa.co.jp/case/industry_academia_collaboration/202503_01.php)
+- [ロケーションARシステムの共同研究UWB通信による位置情報と角度情報で現実空間にデジタル情報を重ねて素早く自動表示](https://bcreer.betsukawa.co.jp/case/industry_academia_collaboration/202503_02.php)
 - [国際会議ICCE2025にて中沢研究室の学生発表が"Best Session Presentation Award"受賞](https://www.kanazawa-it.ac.jp/kitnews/2025/0118_Apirak.html)
 
 ### 2024年度　研究室コンテンツ
