@@ -6,15 +6,10 @@
 - 中沢研究室が所有する研究室は以下の通り
    - 31-201(Eラウンジ,ネットワーク機器等)
    - 31-202(メインルーム:i2.lab)
-   - 31-204(AI Dream Factory) ※リニューアル中
+   - 31-204(AI Dream Factory) 
    - 31-205(打ち合わせ室・ゼミ部屋)
 
 - 研究室公開2025について
-  - 公開日程：(中沢も研究室滞在予定ですが，変動する可能性あり)
-    - ~~9月30日(火) 9:00 - 17:00~~
-    - ~~10月1日(水) 9:00 - 14:20 (14:20以降は外出予定)~~
-    - ~~10月2日(木) 9:00 - 17:00~~
-
   - 場所：31-202 (IDカードは通りませんが，中に人がいる場合は，誰かが開けてくれます)
   - 確実に中沢に会いたい時は，事前にメールにて連絡を頂ければと思います．
      - メールアドレス: nakazawa@infor.kanazawa-it.ac.jp
@@ -24,6 +19,11 @@
 ----
 
 ### 2025年度　研究室コンテンツ
+- [11/18-【国際ロボット展2025に情報工学科 中沢実研究室が出展】](https://www.kanazawa-it.ac.jp/kitnews/2025/1118_nakazawa.html)
+- [11/14-GPW2025(ゲームプログラミングワークショップ)にて大田皐介さんが口頭発表](https://www.facebook.com/minoru.nakazawa.kit/posts/pfbid02CKUQuWF9tTzKE31JQQCWP7X9KsN7Nv3Hop3iMaJZhSGAnPhzgW8x1V8rwYYpNtr3l)
+- [11/13-国内最大級のハッカソンイベントで金沢工業大学から参加したチームが審査委員特別賞に入賞](https://www.kanazawa-it.ac.jp/kitnews/2025/1113_jphacks.html)
+- [11/11-田和広大さんと坂下水彩さんが情報処理学会マルチメディア通信と分散処理ワークショップでダブル受賞](https://www.kanazawa-it.ac.jp/kitnews/2025/1111_nakazawa.html?_ga=2.212810644.1034380669.1763361621-1805255122.1763361621)
+- [7/11-AI沢みのりに関するニュース]](https://www.kanazawa-it.ac.jp/kitnews/2025/0711_AI_Agent.html)
 - [2025年度　ゼミ生の研究テーマ一覧について](2025thesis_all.md)
 - [東京ビックサイトにて開催される国際ロボット展に展示します](https://irex.nikkan.co.jp/)
 - [質問者の感情も機械学習で分析し、音声や表情で回答。 進化したAIエージェント「AI沢みのり」](https://www.kanazawa-it.ac.jp/kitnews/2025/0711_AI_Agent.htmls)
