@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NVIDIA_DLI_Instractor_Application.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="nvidia-dli-certified-instructor-application">NVIDIA DLI Certified Instructor Application</h1>
+<h2 id="personal-information">Personal Information</h2>
+<ul>
+<li><strong>Full Name</strong>: Minoru Nakazawa</li>
+<li><strong>Email Address</strong>: nakazawa@infor.kanazawa-it.ac.jp</li>
+<li><strong>Phone Number</strong>: +81-90-3296-6369</li>
+<li><strong>LinkedIn Profile</strong>: <a href="https://www.linkedin.com/in/minoru-nakazawa-b2b25825/">https://www.linkedin.com/in/minoru-nakazawa-b2b25825/</a></li>
+</ul>
+<h2 id="requirement-alignment-matrix">Requirement Alignment Matrix</h2>
+<table>
+<thead>
+<tr>
+<th>Requirements</th>
+<th>Direct Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Computer Vision</td>
+<td>YOLOv7-based lesion detection （IPSJ Journal 2024）</td>
+</tr>
+<tr>
+<td>Voice Conversion</td>
+<td>Zero-shot real-time voice conversion (IPSJ Journal 2024)</td>
+</tr>
+<tr>
+<td>NLP</td>
+<td>Academic paper summarization system (IPSJ Journal 2021)</td>
+</tr>
+<tr>
+<td>RNN/LSTM</td>
+<td>LSTM lectures + sequence modeling research</td>
+</tr>
+<tr>
+<td>Teaching Experience</td>
+<td>Professor; supervised over 20 MSc students and multiple PhD students</td>
+</tr>
+<tr>
+<td>Python/DL Frameworks</td>
+<td>Python, TensorFlow, PyTorch (hands-on courses)</td>
+</tr>
+<tr>
+<td>RL/GANs</td>
+<td>Covered in  advanced AI courses</td>
+</tr>
+<tr>
+<td>Cloud Computing</td>
+<td>AWS Academy instructor, cloud-based AI solutions</td>
+</tr>
+<tr>
+<td>NVIDIA / Edge AI</td>
+<td>Jetson Xavier traffic analysis (KIT News 2021 &amp; 2025)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="professional-background">Professional Background</h2>
+<ul>
+<li><strong>Current Position</strong>: Professor at Kanazawa Institute of Technology.
+Department of Computer Science and Engineering, specializing in Artificial Intelligence and Machine Learning. Director of Information Technology and Artificial Intelligence Research Laboratory from 2026,and Director of AI Laboratory from 2018.</li>
+<li><strong>Previous Experience</strong>:
+<ul>
+<li>Visiting Researcher at Rochester Institute of Technology (2022-2023)</li>
+<li>Network Researcher  at Fujitsu Laboratory (1993-1996)</li>
+</ul>
+</li>
+<li><strong>Education</strong>:
+<ul>
+<li>Ph.D. in Computer Science and Engineering, Kanazawa Institute of Technology (1999)</li>
+<li>M.S. in Computer Science and Engineering, Kanazawa Institute of Technology (1993)</li>
+<li>B.S. in Computer Science and Engineering, Kanazawa Institute of Technology (1991)</li>
+</ul>
+</li>
+</ul>
+<h2 id="teaching-experience">Teaching Experience</h2>
+<ul>
+<li>
+<p><strong>Courses Taught</strong>:</p>
+<ul>
+<li>Introduction to Artificial Intelligence (Undergraduate)</li>
+<li>Foundations of Innovation (Undergraduate)</li>
+<li>Distributed Systems (Undergraduate)</li>
+<li>Network Construction using Cisco Devices (Undergraduate)</li>
+<li>Advanced IoT Systems (Graduate)</li>
+<li>Global Innovation and Entrepreneurship (Graduate)</li>
+<li>Experience in international education programs and innovation workshops (JICA, SRI International).</li>
+</ul>
+</li>
+<li>
+<p><strong>Teaching Philosophy</strong>: I believe in a hands-on, project-based approach to teaching AI and networking and Cloud Computing. I strive to create an engaging and inclusive learning environment where students can apply theoretical concepts to real-world problems. I encourage collaboration and critical thinking, fostering a community of learners who are passionate about AI, Cloud Computing and its applications.</p>
+</li>
+</ul>
+<h2 id="ai-and-cloud-computing-expertise">AI and Cloud Computing Expertise</h2>
+<ul>
+<li>
+<p><strong>AI Expertise</strong>: My research focuses on machine learning, deep learning, and their applications in various domains. I have published over 20 papers in international journals and conferences, and I have been involved in several AI research projects funded by government agencies and industry partners. I have experience with popular AI frameworks such as TensorFlow, PyTorch, and scikit-learn. My research in AI has focused on various applications, including computer vision, natural language processing, and I implemented deep learning systems using PyTorch, TensorFlow, and Keras, including:</p>
+<ul>
+<li>YOLO-based object detection for medical imaging</li>
+<li>LSTM-based sequence modeling</li>
+<li>NLP summarization system using TF-IDF, fastText, and LexRank</li>
+</ul>
+<p>I designed model selection, training pipelines, and evaluation strategies.  Achieved high detection performance on real-world datasets under real-time constraints.</p>
+<ul>
+<li>
+<p>Title of the Journals(2020-2026):</p>
+<ul>
+<li>&quot;SUPPORTING INCLUSIVE TEACHING WITH AI: MULTIMODAL CLASSROOM ENGAGEMENT MONITORING IN SCHOOLS IN JAPAN&quot; (2026)</li>
+<li>&quot;Smart Warehouse Safety: Computer Vision for Forklift Driver Monitoring in Warehouse Setting &quot; (2025)</li>
+<li>&quot;Proposal for a Lightweight and Highly Practical Universal Lesion Detector Based on YOLO&quot; (2024)</li>
+<li>&quot;An Implementation and Its Evaluation of Zero-shot Real-time Voice Conversion Method Using AutoVC&quot; (2024)</li>
+<li>&quot;Proposing and Evaluating Optimization of Camera Setting-up for Traﬃc Surveys at Intersections&quot; (2023)</li>
+<li>&quot;Development and it's Evaluation of a Counterline Optimization Method for Directional Traffic Surveys Using MOT&quot; (2023)</li>
+<li>&quot;Proposal and it's Evaluation for Multi-emotional Feedback in Online Lectures Using EEG&quot;(2023)</li>
+<li>&quot;Implementation and Evaluation of Behavior Recognition Indoor Environment Using Composite Sensor&quot;(2021)</li>
+<li>&quot;End-to-End Academic Paper Summarization System that Takes into Account Important Figures and Tables&quot;(2021)</li>
+<li>&quot;Proposal and its Evaluation of Deep Learning Model for Human Detection Task in a Single LRF Environment&quot;(2021)</li>
+<li>&quot;Examination and It’s Evaluation of Preprocessing Method for Individual Identification in EEG&quot;(2020)</li>
+</ul>
+</li>
+<li>
+<p>Teaching Experience in AI:
+I have been teaching AI-related courses at the undergraduate and graduate levels for over 10 years. I have developed course materials, including lectures, assignments, and projects, that cover a wide range of AI topics, from basic machine learning concepts to advanced deep learning techniques. I guide students from fundamental concepts to implementation and evaluation of deep learning models. I have also supervised several student research projects in AI, resulting in publications and presentations at conferences. Students implement deep learning models using PyTorch and evaluate them on real-world datasets.</p>
+</li>
+<li>
+<p>NVIDIA-Related Experience:
+I have experience with NVIDIA platforms, particularly in the context of edge AI applications. I have utilized NVIDIA Jetson devices for real-time traffic analysis and have integrated NVIDIA GPUs into my research projects for deep learning model training and inference. My work has been recognized in the media, showcasing the practical applications of NVIDIA technology in real-world scenarios. Leveraged GPU acceleration for model training and real-time inference.
+AI sensor system using image and voice recognition deployed on NVIDIA Jetson Xavier for public safety applications in Kanazawa City.</p>
+</li>
+<li>
+<p>Real-time traffic analysis using YOLO on NVIDIA Jetson Xavier : <a href="https://www.kanazawa-it.ac.jp/kitnews/2021/1011_ai.html">https://www.kanazawa-it.ac.jp/kitnews/2021/1011_ai.html</a></p>
+</li>
+<li>
+<p>Featured in KIT News (2025): <a href="https://www.kanazawa-it.ac.jp/kitnews/2025/1118_nakazawa.html">https://www.kanazawa-it.ac.jp/kitnews/2025/1118_nakazawa.html</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>These projects demonstrate real-time deployment of deep learning systems using NVIDIA platforms under practical constraints.</p>
+<ul>
+<li>
+<p><strong>Industry Collaboration</strong>§: I have collaborated with various industry partners on AI projects, providing expertise in model development, deployment, and evaluation. These collaborations have allowed me to apply AI techniques to solve real-world problems and have provided valuable insights into the practical challenges of implementing AI solutions in industry settings.
+I have led applied AI projects with industry partners, including:</p>
+<ul>
+<li>Isuzu Motors (ADAS simulation and perception systems)</li>
+<li>NTT R&amp;D (LSTM-based cyber attack analysis)</li>
+<li>Sugino Machine (industrial defect detection using vision AI)</li>
+<li>Betsukawa Factory (predictive maintenance using machine learning using Robotics and IoT)</li>
+</ul>
+</li>
+<li>
+<p><strong>Cloud Computing Expertise</strong>: I have experience with cloud platforms such as AWS, Azure, and Google Cloud. I have designed and implemented cloud-based solutions for various applications, including data storage, machine learning model deployment, and scalable web applications. I am proficient in using cloud services for AI workloads, such as AWS SageMaker and Azure Machine Learning. I have a license of AWS Academy instructor and I have been teaching cloud computing courses using AWS Academy curriculum since 2023.</p>
+</li>
+<li>
+<p><strong>Networking Expertise</strong>: I have a strong background in computer networking, with expertise in network design, implementation, and troubleshooting. I have experience with Cisco devices and have taught courses on network construction using Cisco equipment. I have a Cisco Certified Network Associate (CCNA) certification and have been involved in research projects related to network performance optimization and security.</p>
+</li>
+</ul>
+<h2 id="motivation-for-becoming-a-dli-certified-instructor">Motivation for Becoming a DLI Certified Instructor</h2>
+<p>I am passionate about AI and Cloud Computing and I believe that becoming a DLI Certified Instructor will allow me to further enhance my teaching skills and provide my students with the best possible education in these fields. I am excited about the opportunity to be part of the NVIDIA DLI community and to share my knowledge and experience with other educators and students. I am committed to promoting diversity and inclusion in AI education, and I believe that the DLI program will provide me with the resources and support to achieve this goal.</p>
+
+</body>
+</html>

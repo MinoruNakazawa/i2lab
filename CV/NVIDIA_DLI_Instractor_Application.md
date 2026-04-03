@@ -76,8 +76,8 @@
    I have experience with NVIDIA platforms, particularly in the context of edge AI applications. I have utilized NVIDIA Jetson devices for real-time traffic analysis and have integrated NVIDIA GPUs into my research projects for deep learning model training and inference. My work has been recognized in the media, showcasing the practical applications of NVIDIA technology in real-world scenarios. Leveraged GPU acceleration for model training and real-time inference.
    AI sensor system using image and voice recognition deployed on NVIDIA Jetson Xavier for public safety applications in Kanazawa City.
    
-   - Real-time traffic analysis using YOLO on NVIDIA Jetson Xavier : https://www.kanazawa-it.ac.jp/kitnews/2021/1011_ai.html
-   - Featured in KIT News (2025): https://www.kanazawa-it.ac.jp/kitnews/2025/1118_nakazawa.html
+   - Real-time traffic analysis using YOLO on NVIDIA Jetson Xavier : [https://www.kanazawa-it.ac.jp/kitnews/2021/1011_ai.html](https://www.kanazawa-it.ac.jp/kitnews/2021/1011_ai.html)
+   - Featured in KIT News (2025): [https://www.kanazawa-it.ac.jp/kitnews/2025/1118_nakazawa.html](https://www.kanazawa-it.ac.jp/kitnews/2025/1118_nakazawa.html)
 
 These projects demonstrate real-time deployment of deep learning systems using NVIDIA platforms under practical constraints.
 
