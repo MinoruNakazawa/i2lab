@@ -79,7 +79,7 @@
    - Real-time traffic analysis using YOLO on NVIDIA Jetson Xavier : [https://www.kanazawa-it.ac.jp/kitnews/2021/1011_ai.html](https://www.kanazawa-it.ac.jp/kitnews/2021/1011_ai.html)
    - Featured in KIT News (2025): [https://www.kanazawa-it.ac.jp/kitnews/2025/1118_nakazawa.html](https://www.kanazawa-it.ac.jp/kitnews/2025/1118_nakazawa.html)
 
-These projects demonstrate real-time deployment of deep learning systems using NVIDIA platforms under practical constraints.
+      These projects demonstrate real-time deployment of deep learning systems using NVIDIA platforms under practical constraints.
 
 - **Industry Collaboration**§: I have collaborated with various industry partners on AI projects, providing expertise in model development, deployment, and evaluation. These collaborations have allowed me to apply AI techniques to solve real-world problems and have provided valuable insights into the practical challenges of implementing AI solutions in industry settings.
 I have led applied AI projects with industry partners, including:
