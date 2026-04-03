@@ -50,9 +50,9 @@
 ## AI and Cloud Computing Expertise
 
 - **AI Expertise**: My research focuses on machine learning, deep learning, and their applications in various domains. I have published over 20 papers in international journals and conferences, and I have been involved in several AI research projects funded by government agencies and industry partners. I have experience with popular AI frameworks such as TensorFlow, PyTorch, and scikit-learn. My research in AI has focused on various applications, including computer vision, natural language processing, and I implemented deep learning systems using PyTorch, TensorFlow, and Keras, including:
-    - YOLO-based object detection for medical imaging
-    - LSTM-based sequence modeling
-    - NLP summarization system using TF-IDF, fastText, and LexRank
+  - YOLO-based object detection for medical imaging
+  - LSTM-based sequence modeling
+  - NLP summarization system using TF-IDF, fastText, and LexRank
 
    I designed model selection, training pipelines, and evaluation strategies.  Achieved high detection performance on real-world datasets under real-time constraints.
 
@@ -90,7 +90,7 @@ I have led applied AI projects with industry partners, including:
 
 - **Cloud Computing Expertise**: I have experience with cloud platforms such as AWS, Azure, and Google Cloud. I have designed and implemented cloud-based solutions for various applications, including data storage, machine learning model deployment, and scalable web applications. I am proficient in using cloud services for AI workloads, such as AWS SageMaker and Azure Machine Learning. I have a license of AWS Academy instructor and I have been teaching cloud computing courses using AWS Academy curriculum since 2023.
 
-- **Networking Expertise**: I have a strong background in computer networking, with expertise in network design, implementation, and troubleshooting. I have experience with Cisco devices and have taught courses on network construction using Cisco equipment. I have a Cisco Certified Network Associate (CCNA) certification and have been involved in research projects related to network performance optimization and security.
+- **Networking Expertise**: I have a strong background in computer networking, with expertise in network design, implementation, and troubleshooting. I have experience with Cisco devices and have taught courses on network construction using Cisco equipment. I have a Cisco Certified Network Associate (CCNA) Instractor certification and have been involved in research projects related to network performance optimization and security.
 
 ## Motivation for Becoming a DLI Certified Instructor
 
