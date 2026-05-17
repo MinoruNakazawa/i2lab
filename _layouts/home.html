@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}中沢研究室</title>
+    <meta name="description" content="金沢工業大学 中沢研究室の研究分野、活動、見学案内を掲載しています。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-brand" href="{{ '/' | relative_url }}">中沢研究室</a>
+        <nav class="site-nav" aria-label="主要ナビゲーション">
+          <a href="#research">研究分野</a>
+          <a href="#news">最新情報</a>
+          <a href="#about">研究室紹介</a>
+          <a href="#visit">見学案内</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>Kanazawa Institute of Technology / 中沢実研究室</p>
+        <p><a href="https://github.com/MinoruNakazawa/i2lab">GitHub</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
