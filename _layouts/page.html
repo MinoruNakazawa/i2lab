@@ -4,29 +4,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} | {% endif %}中沢研究室</title>
-    <meta name="description" content="金沢工業大学 中沢研究室の研究分野、活動、見学案内を掲載しています。">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}金沢工業大学 中沢研究室の活動情報ページです。{% endif %}">
     {% seo %}
     {% include head-custom.html %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/page.css' | relative_url }}">
   </head>
   <body>
     <header class="site-header">
       <div class="container site-header__inner">
         <a class="site-brand" href="{{ '/' | relative_url }}">中沢研究室</a>
         <nav class="site-nav" aria-label="主要ナビゲーション">
+          <a href="{{ '/' | relative_url }}">トップ</a>
           <a href="{{ '/' | relative_url }}#research">研究分野</a>
           <a href="{{ '/' | relative_url }}#news">最新情報</a>
-          <a href="{{ '/' | relative_url }}#about">研究室紹介</a>
           <a href="{{ '/' | relative_url }}#visit">見学案内</a>
         </nav>
       </div>
     </header>
 
-    <main>
-      {{ content }}
+    <main class="page-main">
+      <div class="container">
+        <article class="page-card markdown-body">
+          {{ content }}
+        </article>
+      </div>
     </main>
 
     <footer class="site-footer">

@@ -1,3 +1,22 @@
 remote_theme: pages-themes/hacker@v0.2.0
+title: 中沢研究室
+description: 金沢工業大学 中沢研究室の研究分野、研究成果、見学案内を掲載しています。
+url: https://minorunakazawa.github.io
+baseurl: /i2lab
+lang: ja
+og_image: /images/IMG_9896.JPG
+twitter:
+  card: summary_large_image
+social:
+  name: 中沢研究室
+  links:
+    - https://github.com/MinoruNakazawa/i2lab
+    - https://researchmap.jp/read0051201
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
