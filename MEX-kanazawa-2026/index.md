@@ -6,7 +6,7 @@ og_image: /images/IMG_9896.JPG
 
 MEX金沢2026にて中沢研究室が行った発表資料と、後半で紹介した研究事例のポスターを公開しています。
 
-動画は YouTube で順次公開予定です。公開後、このページから視聴できるように更新します。
+動画は YouTube に公開しました。このページから視聴できます。
 
 ## 発表資料
 
@@ -16,12 +16,12 @@ MEX金沢2026にて中沢研究室が行った発表資料と、後半で紹介�
 
 | 事例 | ポスター | 動画 |
 | --- | --- | --- |
-| 3DLiDARによる交差点交通流観測 | [PDFを見る](posters/3dlidar-traffic-flow.pdf) | YouTube公開準備中 |
-| 4DX@HOME | [PDFを見る](posters/4dx-home.pdf) | YouTube公開準備中 |
-| AI沢みのり | [PDFを見る](posters/aizawa-minori.pdf) | YouTube公開準備中 |
-| UWB MegaRover | [PDFを見る](posters/uwb-robot.pdf) | YouTube公開準備中 |
-| 解説型将棋AI | [PDFを見る](posters/shogi-ai.pdf) | YouTube公開準備中 |
-| 丸山洸青さん紹介事例 | [PDFを見る](posters/maruyama-op.pdf) | YouTube公開準備中 |
+| 3DLiDARによる交差点交通流観測 | [PDFを見る](posters/3dlidar-traffic-flow.pdf) | [YouTubeで見る](https://youtu.be/XwXTfltDltk) |
+| 4DX@HOME | [PDFを見る](posters/4dx-home.pdf) | [YouTubeで見る](https://youtu.be/bsAyueX0YeA) |
+| AI沢みのり | [PDFを見る](posters/aizawa-minori.pdf) | [YouTubeで見る](https://youtu.be/MED0ItNqH8I) |
+| UWB MegaRover | [PDFを見る](posters/uwb-robot.pdf) | [YouTubeで見る](https://youtu.be/IV8HZ7nxIZ4) |
+| 解説型将棋AI | [PDFを見る](posters/shogi-ai.pdf) | [YouTubeで見る](https://youtu.be/uYcYzQcfu7E) |
+| Project DANYA | [PDFを見る](posters/maruyama-op.pdf) | [YouTubeで見る](https://youtu.be/ehofgLHogIc) |
 
 ## 補足
 
