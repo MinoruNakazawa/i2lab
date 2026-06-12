@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>31-205 会議室予約カレンダー</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-a" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape-b" aria-hidden="true"></div>
+
+    <main class="app">
+      <header class="hero">
+        <p class="eyebrow">Reserve System</p>
+        <h1>会議室 31-205 予約カレンダー</h1>
+        <p class="subtitle">
+          日時・用途・予約者を一元管理。重複予約は登録時に即時アラートします。
+        </p>
+      </header>
+
+      <section class="panel form-panel" aria-labelledby="form-title">
+        <h2 id="form-title">新規予約</h2>
+        <form id="reservation-form" class="reservation-form">
+          <div class="field-row">
+            <label>
+              開始日時
+              <input type="datetime-local" id="startAt" required />
+            </label>
+            <label>
+              終了日時
+              <input type="datetime-local" id="endAt" required />
+            </label>
+          </div>
+
+          <div class="field-row">
+            <label>
+              用途
+              <input
+                type="text"
+                id="purpose"
+                placeholder="例: ゼミ打ち合わせ"
+                maxlength="120"
+                required
+              />
+            </label>
+            <label>
+              予約者
+              <input
+                type="text"
+                id="booker"
+                placeholder="例: 中澤"
+                maxlength="80"
+                required
+              />
+            </label>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="primary">予約を登録</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel calendar-panel" aria-labelledby="calendar-title">
+        <div class="calendar-header">
+          <h2 id="calendar-title">月間カレンダー</h2>
+          <div class="calendar-nav" role="group" aria-label="月移動">
+            <button id="prev-month" type="button" class="ghost">前月</button>
+            <p id="current-month" class="month-label"></p>
+            <button id="next-month" type="button" class="ghost">次月</button>
+          </div>
+        </div>
+        <div id="calendar-grid" class="calendar-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="panel list-panel" aria-labelledby="list-title">
+        <h2 id="list-title">予約一覧</h2>
+        <p class="room-tag">対象会議室: 31-205</p>
+        <ul id="reservation-list" class="reservation-list"></ul>
+      </section>
+    </main>
+
+    <template id="reservation-item-template">
+      <li class="reservation-item">
+        <div class="reservation-meta">
+          <p class="reservation-time"></p>
+          <p class="reservation-purpose"></p>
+          <p class="reservation-booker"></p>
+        </div>
+        <button type="button" class="danger delete-btn">削除</button>
+      </li>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
