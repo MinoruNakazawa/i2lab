@@ -1,128 +1,261 @@
-# 31-205 会議室予約カレンダー
+# 会議室予約カレンダー
 
-Webブラウザで利用できる、会議室 31-205 専用の予約カレンダーです。
+会議室 31-205 / 31-202 向けの予約カレンダーです。
+AWS のサーバーレス構成で、HTTPS、非公開 S3、予約PIN、監視を含めて運用します。
 
-## 概要
-- 会議室 31-205 の予約を登録
-- 予約情報として「日時・用途・予約者」を表示
-- 既存予約と時間帯が重複する場合はアラート表示
-- 月間カレンダーと予約一覧で確認
-- データはブラウザの LocalStorage に保存
-
-## 主な機能
-1. 新規予約登録
-- 開始日時、終了日時、用途、予約者を入力して予約
-
-2. 重複予約アラート
-- 既存予約と時間帯が重なる場合は登録を拒否して警告
-
-3. 予約一覧表示
-- 予約の詳細（日時、用途、予約者）を一覧表示
-- 不要な予約は削除可能
-
-4. 月間カレンダー表示
-- 前月/次月へ移動可能
-- 日ごとの予約をチップ表示（多い日は「ほか n 件」表示）
-
-## 画面構成
-- 新規予約フォーム
-- 月間カレンダー
-- 予約一覧
-
-## 実行手順
-### 方法1: ファイルを直接開く
-1. [index.html](index.html) をブラウザで開く
-2. 予約フォームに入力して「予約を登録」を押す
-
-### 方法2: 簡易サーバーで実行（推奨）
-1. ターミナルでプロジェクトフォルダに移動
-2. 以下のいずれかを実行
-
-```bash
-# Python 3
-python3 -m http.server 8000
-```
-
-```bash
-# Node.js (serve を使う場合)
-npx serve .
-```
-
-3. ブラウザで表示された URL にアクセス
-
-## GitHub Pages で公開する手順
-このアプリは静的ファイル構成のため、そのまま GitHub Pages で公開できます。
-
-### i2lab 配下で運用する場合（推奨）
-`https://minorunakazawa.github.io/i2lab/` の内部に置きたい場合は、
-`minorunakazawa/minorunakazawa.github.io` リポジトリの `i2lab` ディレクトリ配下に
-このアプリをサブフォルダとして配置してください。
-
-配置例:
+## 構成
 
 ```text
-minorunakazawa.github.io/
-	i2lab/
-		reserve31-205/
-			index.html
-			styles.css
-			app.js
+Browser
+  |
+  | HTTPS
+  v
+CloudFront
+  |                 \
+  | /static files    \ /api/*
+  v                   v
+Private S3         API Gateway HTTP API
+                      |
+                    Lambda
+                      |
+                   DynamoDB
 ```
 
-公開 URL 例:
-- `https://minorunakazawa.github.io/i2lab/reserve31-205/`
+## セキュリティ対策
 
-この構成なら、既存の `i2lab` コンテンツを壊さずに追加できます。
+このテンプレートには以下を含めています。
 
-1. GitHub に push する
-- [index.html](index.html), [styles.css](styles.css), [app.js](app.js), [README.md](README.md) を含めて push
+- S3 バケットは非公開
+- CloudFront Origin Access Control で CloudFront だけが S3 を読める
+- CloudFront で HTTPS にリダイレクト
+- セキュリティヘッダーと CSP を付与
+- API は CloudFront の同一オリジン `/api/*` 経由で利用
+- API Gateway にスロットリングを設定
+- 予約ごとに作成時の予約PINを設定し、そのPINで編集・削除
+- Lambda の DynamoDB 権限は対象テーブルの `Scan` / `GetItem` / `PutItem` / `DeleteItem` に限定
+- Lambda / API Gateway / DynamoDB の CloudWatch アラームを作成
+- 任意でアラーム通知先メールアドレスを設定可能
 
-2. GitHub 側で Pages を有効化する
-- リポジトリの Settings を開く
-- Pages を開く
-- Build and deployment の Source を Deploy from a branch に設定
-- Branch は master、Folder は /(root) を選択して Save
+## 必要なもの
 
-3. 公開 URL を確認する
-- 数十秒から数分で公開される
-- URL 例: https://nakalab.github.io/progress2018/
+- AWS アカウント
+- AWS CLI
+- AWS SAM CLI
+- Node.js 20 以上
 
-4. 動作確認する
-- フォーム入力、予約登録、重複時アラートが期待通りか確認
+確認:
 
-## GitHub Pages 運用時の注意
-- LocalStorage はブラウザごとに保存されるため、利用者間で予約データは共有されません
-- 複数ユーザーで共通運用する場合は、サーバー側 DB と API の追加が必要です
-- 公開 URL に対して HTTPS でアクセスされるため、混在コンテンツは使用しないでください
+```bash
+aws sts get-caller-identity
+sam --version
+node -v
+npm -v
+```
 
-## バリデーション仕様
-- 必須項目が未入力の場合はアラート
-- 日時形式が不正な場合はアラート
-- 開始日時 >= 終了日時 の場合はアラート
-- 予約重複時はアラートして登録しない
+## ローカル準備
 
-## 重複判定ロジック
-既存予約 `A` と新規予約 `B` の重複は、以下を満たす場合です。
+```bash
+cd reserve31_205
+npm install
+npm run check
+```
 
-- `B.start < A.end`
-- `A.start < B.end`
+ローカル確認では `data/reservations.json` に保存します。
 
-## データ保存
-- 保存先: ブラウザ LocalStorage
-- キー: `reserve31_205_items`
-- 別ブラウザ/別端末とは同期されません
+```bash
+npm start
+```
+
+```text
+http://localhost:3000
+```
+
+ローカルで管理用 PIN やハッシュ pepper を試す場合は `.env.local` を作成します。
+
+```bash
+DELETE_PIN=管理用PIN
+DELETE_PIN_PEPPER=長いランダム文字列
+```
+
+## AWS デプロイ
+
+初回:
+
+```bash
+sam build
+sam deploy --guided
+```
+
+`OriginVerifySecret` は長いランダム文字列を使います。
+
+```bash
+openssl rand -base64 32
+```
+
+入力例:
+
+```text
+Stack Name: reserve31-205
+AWS Region: ap-northeast-1
+Parameter DeletePin: 管理用PIN（古い予約や緊急削除用）
+Parameter OriginVerifySecret: ランダムな長い文字列
+Parameter AlarmEmail: 通知先メールアドレス（不要なら空）
+Parameter AllowedCorsOrigin: https://example.invalid
+Confirm changes before deploy: Y
+Allow SAM CLI IAM role creation: Y
+Disable rollback: N
+Save arguments to configuration file: Y
+```
+
+`AlarmEmail` を設定した場合、AWS から確認メールが届くので subscription を承認してください。
+
+2 回目以降:
+
+```bash
+sam build
+sam deploy --guided
+```
+
+今回のように `template.yaml` に新しい Parameters が追加された場合は、保存済み `samconfig.toml` だけでは足りないため `--guided` で再入力してください。
+
+## 静的ファイルのアップロード
+
+デプロイ後の Outputs から以下を控えます。
+
+- `WebsiteUrl`: CloudFront の HTTPS URL
+- `CloudFrontDistributionId`: CloudFront distribution ID
+- `StaticAssetBucketName`: 非公開 S3 バケット名
+- `ApiUrl`: API Gateway の直接 URL
+- `ReservationsTableName`: DynamoDB テーブル名
+
+CloudFront 経由では API を同一オリジンの `/api/reservations` として呼べるため、`config.js` は以下でよいです。
+
+```js
+window.RESERVATION_API_BASE = "/api/reservations";
+```
+
+アップロード:
+
+```bash
+aws s3 cp index.html s3://YOUR_STATIC_ASSET_BUCKET_NAME/index.html --content-type text/html
+aws s3 cp en.html s3://YOUR_STATIC_ASSET_BUCKET_NAME/en.html --content-type text/html
+aws s3 cp styles.css s3://YOUR_STATIC_ASSET_BUCKET_NAME/styles.css --content-type text/css
+aws s3 cp app.js s3://YOUR_STATIC_ASSET_BUCKET_NAME/app.js --content-type application/javascript
+aws s3 cp config.js s3://YOUR_STATIC_ASSET_BUCKET_NAME/config.js --content-type application/javascript
+```
+
+CloudFront キャッシュを消します。
+
+```bash
+aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
+```
+
+ブラウザでは `WebsiteUrl` を開きます。
+
+```text
+https://YOUR_DISTRIBUTION_DOMAIN.cloudfront.net
+```
+
+## 動作確認
+
+CloudFront 経由:
+
+```bash
+curl https://YOUR_DISTRIBUTION_DOMAIN.cloudfront.net/api/health
+```
+
+期待値:
+
+```json
+{"ok":true,"storage":"dynamodb"}
+```
+
+予約登録、重複予約の拒否、作成時に設定した予約PINによる編集・削除を確認します。
+カレンダー上の予約チップは、ダブルクリックすると編集画面を開けます。
+
+API Gateway の直接 URL は、CloudFront が付ける秘密ヘッダーなしでは `403` になります。通常の利用では `WebsiteUrl` だけを使います。
+
+## API 仕様
+
+- `GET /api/health`: ヘルスチェック
+- `GET /api/reservations`: 予約一覧取得
+- `POST /api/reservations`: 新規予約登録
+- `PUT /api/reservations/:id`: 予約変更
+- `DELETE /api/reservations/:id`: 予約削除
+
+変更・削除時は `X-Delete-Pin` ヘッダーに、予約作成時に設定した予約PINを指定します。
+
+```bash
+curl -X DELETE \
+  -H "X-Delete-Pin: RESERVATION_PIN" \
+  https://YOUR_DISTRIBUTION_DOMAIN.cloudfront.net/api/reservations/YOUR_RESERVATION_ID
+```
+
+`POST /api/reservations` の例:
+
+```json
+{
+  "room": "31-205",
+  "startAt": "2026-06-12T10:00",
+  "endAt": "2026-06-12T11:00",
+  "purpose": "ゼミ打ち合わせ",
+  "booker": "中澤",
+  "deletePin": "1234"
+}
+```
+
+## 会議場所
+
+- `31-205`
+- `31-202`
+
+## DynamoDB テーブル
+
+`template.yaml` で以下を作成します。
+
+- Partition key: `id`（String）
+- Billing mode: `PAY_PER_REQUEST`
+- SSE enabled
+
+保存する属性:
+
+- `id`
+- `room`
+- `startAt`
+- `endAt`
+- `purpose`
+- `booker`
+- `deletePinHash`
+- `createdAt`
+
+重複チェックは、同じ会議場所の予約を Lambda 側で読み出して判定します。
+件数が大きく増える場合は、`room` と `startAt` を使った GSI 追加を検討してください。
+
+## バリデーション
+
+- 必須項目が未入力の場合はエラー
+- 会議場所が想定外の値の場合はエラー
+- 日時形式が不正な場合はエラー
+- 開始日時 >= 終了日時 の場合はエラー
+- 同じ会議場所の重複時間帯は登録不可
 
 ## ファイル構成
-- [index.html](index.html): 画面構造
+
+- [index.html](index.html): 日本語画面構造
+- [en.html](en.html): 英語画面構造
 - [styles.css](styles.css): スタイル定義
-- [app.js](app.js): 予約ロジック、描画、重複判定
+- [app.js](app.js): フロントエンド描画と API 通信
+- [config.example.js](config.example.js): API URL 設定サンプル
+- [server.js](server.js): ローカル確認用 Express サーバー
+- [api/lambda.js](api/lambda.js): AWS Lambda ハンドラー
+- [api/_lib/common.js](api/_lib/common.js): 共通バリデーション
+- [api/_lib/dynamodb-store.js](api/_lib/dynamodb-store.js): DynamoDB アクセス
+- [template.yaml](template.yaml): AWS SAM テンプレート
 
-## 注意事項
-- 本実装はフロントエンド単体構成です
-- 永続化や複数端末共有が必要な場合はバックエンド連携が必要です
+## 運用メモ
 
-## 今後の拡張案
-1. 予約編集機能の追加
-2. 複数会議室対応
-3. サーバー保存（DB）と認証
-4. Google Calendar など外部連携
+- AWS アクセスキーは root ユーザーで作らない
+- 使わないアクセスキーは削除する
+- `DELETE_PIN`, `DELETE_PIN_PEPPER`, `ORIGIN_VERIFY_SECRET`, `config.js` は Git 管理しない
+- 月額事故防止のため AWS Budgets のアラートも別途設定する
+- 独自ドメインを使う場合は CloudFront に ACM 証明書と Alternate domain name を追加する

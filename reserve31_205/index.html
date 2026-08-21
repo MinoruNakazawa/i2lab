@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>31-205 会議室予約カレンダー</title>
+    <title>会議室予約カレンダー</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,17 +18,36 @@
 
     <main class="app">
       <header class="hero">
+        <p class="language-switch"><a href="./en.html" lang="en">English</a></p>
         <p class="eyebrow">Reserve System</p>
-        <h1>会議室 31-205 予約カレンダー</h1>
+        <h1>会議室予約カレンダー</h1>
         <p class="subtitle">
           日時・用途・予約者を一元管理。重複予約は登録時に即時アラートします。
         </p>
       </header>
 
-      <section class="panel form-panel" aria-labelledby="form-title">
-        <h2 id="form-title">新規予約</h2>
-        <form id="reservation-form" class="reservation-form">
+      <section class="panel form-panel collapsed" aria-labelledby="form-title">
+        <div class="collapsible-header">
+          <h2 id="form-title">新規予約</h2>
+          <button
+            id="toggle-form"
+            type="button"
+            class="ghost"
+            aria-expanded="false"
+            aria-controls="reservation-form"
+          >
+            開く
+          </button>
+        </div>
+        <form id="reservation-form" class="reservation-form" hidden>
           <div class="field-row">
+            <label>
+              会議場所
+              <select id="room" required>
+                <option value="31-205" selected>31-205</option>
+                <option value="31-202">31-202</option>
+              </select>
+            </label>
             <label>
               開始日時
               <input type="datetime-local" id="startAt" required />
@@ -36,6 +55,19 @@
             <label>
               終了日時
               <input type="datetime-local" id="endAt" required />
+            </label>
+            <label>
+              繰り返し
+              <select id="repeatType">
+                <option value="none">なし</option>
+                <option value="weekly">毎週</option>
+                <option value="biweekly">隔週</option>
+                <option value="monthly">毎月</option>
+              </select>
+            </label>
+            <label id="repeat-until-field" hidden>
+              繰り返し終了日
+              <input type="date" id="repeatUntil" />
             </label>
           </div>
 
@@ -55,8 +87,20 @@
               <input
                 type="text"
                 id="booker"
-                placeholder="例: 中澤"
+                placeholder="例: 中沢実"
                 maxlength="80"
+                required
+              />
+            </label>
+            <label>
+              予約PIN
+              <input
+                type="password"
+                id="deletePin"
+                placeholder="削除時に使うPIN"
+                minlength="4"
+                maxlength="32"
+                autocomplete="new-password"
                 required
               />
             </label>
@@ -70,11 +114,22 @@
 
       <section class="panel calendar-panel" aria-labelledby="calendar-title">
         <div class="calendar-header">
-          <h2 id="calendar-title">月間カレンダー</h2>
-          <div class="calendar-nav" role="group" aria-label="月移動">
-            <button id="prev-month" type="button" class="ghost">前月</button>
+          <h2 id="calendar-title">カレンダー</h2>
+          <div class="calendar-view-switch" role="group" aria-label="表示切替">
+            <button id="view-month" type="button" class="view-btn active" data-view="month" aria-pressed="true">
+              月
+            </button>
+            <button id="view-week" type="button" class="view-btn" data-view="week" aria-pressed="false">
+              週
+            </button>
+            <button id="view-day" type="button" class="view-btn" data-view="day" aria-pressed="false">
+              日
+            </button>
+          </div>
+          <div class="calendar-nav" role="group" aria-label="期間移動">
+            <button id="prev-month" type="button" class="ghost">前へ</button>
             <p id="current-month" class="month-label"></p>
-            <button id="next-month" type="button" class="ghost">次月</button>
+            <button id="next-month" type="button" class="ghost">次へ</button>
           </div>
         </div>
         <div id="calendar-grid" class="calendar-grid" aria-live="polite"></div>
@@ -82,15 +137,71 @@
 
       <section class="panel list-panel" aria-labelledby="list-title">
         <h2 id="list-title">予約一覧</h2>
-        <p class="room-tag">対象会議室: 31-205</p>
+        <p class="room-tag">対象会議室: 31-205 / 31-202</p>
+        <p id="reservation-list-range" class="list-range"></p>
         <ul id="reservation-list" class="reservation-list"></ul>
       </section>
     </main>
+
+    <div id="edit-modal" class="modal-backdrop" hidden>
+      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="edit-title">
+        <h2 id="edit-title">予約編集</h2>
+        <form id="edit-form" class="reservation-form">
+          <input type="hidden" id="editId" />
+          <div class="field-row">
+            <label>
+              会議場所
+              <select id="editRoom" required>
+                <option value="31-205">31-205</option>
+                <option value="31-202">31-202</option>
+              </select>
+            </label>
+            <label>
+              開始日時
+              <input type="datetime-local" id="editStartAt" required />
+            </label>
+            <label>
+              終了日時
+              <input type="datetime-local" id="editEndAt" required />
+            </label>
+          </div>
+          <div class="field-row">
+            <label>
+              用途
+              <input type="text" id="editPurpose" maxlength="120" required />
+            </label>
+            <label>
+              予約者
+              <input type="text" id="editBooker" maxlength="80" required />
+            </label>
+            <label>
+              予約PIN
+              <input
+                type="password"
+                id="editDeletePin"
+                minlength="4"
+                maxlength="32"
+                autocomplete="current-password"
+                required
+              />
+            </label>
+          </div>
+          <div class="modal-actions">
+            <button type="button" id="editDelete" class="danger delete-btn">削除</button>
+            <div class="modal-action-group">
+              <button type="button" id="editCancel" class="ghost">キャンセル</button>
+              <button type="submit" class="primary">変更を保存</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
 
     <template id="reservation-item-template">
       <li class="reservation-item">
         <div class="reservation-meta">
           <p class="reservation-time"></p>
+          <p class="reservation-room"></p>
           <p class="reservation-purpose"></p>
           <p class="reservation-booker"></p>
         </div>
@@ -98,6 +209,7 @@
       </li>
     </template>
 
+    <script src="./config.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

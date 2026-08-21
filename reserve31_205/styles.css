@@ -61,12 +61,26 @@ body {
 }
 
 .hero {
+  position: relative;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 18px;
   padding: 20px 22px;
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
   animation: rise 0.7s ease-out both;
+}
+
+.language-switch {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.language-switch a {
+  color: var(--accent);
+  font-weight: 700;
 }
 
 .eyebrow {
@@ -116,9 +130,33 @@ h2 {
   font-size: 1.1rem;
 }
 
+.collapsible-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.collapsible-header h2 {
+  margin-bottom: 4px;
+}
+
+.form-panel.collapsed {
+  padding-bottom: 12px;
+}
+
 .reservation-form {
   display: grid;
   gap: 12px;
+  margin-top: 10px;
+}
+
+.reservation-form[hidden] {
+  display: none !important;
+}
+
+[hidden] {
+  display: none !important;
 }
 
 .field-row {
@@ -133,7 +171,8 @@ label {
   font-size: 0.92rem;
 }
 
-input {
+input,
+select {
   width: 100%;
   border: 1px solid #bdb39f;
   border-radius: 10px;
@@ -142,7 +181,8 @@ input {
   background: var(--bg-soft);
 }
 
-input:focus {
+input:focus,
+select:focus {
   outline: 2px solid rgba(15, 118, 110, 0.28);
   border-color: var(--accent);
 }
@@ -178,6 +218,29 @@ button {
   flex-wrap: wrap;
 }
 
+.calendar-view-switch {
+  display: flex;
+  gap: 4px;
+  border: 1px solid #bcae96;
+  border-radius: 999px;
+  background: #fff;
+  padding: 3px;
+}
+
+.view-btn {
+  min-width: 42px;
+  border-radius: 999px;
+  background: transparent;
+  color: #2d3a35;
+  padding: 7px 12px;
+  font-weight: 700;
+}
+
+.view-btn.active {
+  background: #0f766e;
+  color: #fff;
+}
+
 .calendar-nav {
   display: flex;
   align-items: center;
@@ -205,6 +268,15 @@ button {
   gap: 8px;
 }
 
+.calendar-grid.day-view {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.calendar-grid.week-view .calendar-cell,
+.calendar-grid.day-view .calendar-cell {
+  min-height: 150px;
+}
+
 .calendar-cell {
   min-height: 86px;
   border: 1px solid #dbcdb6;
@@ -218,6 +290,23 @@ button {
 
 .calendar-cell.other-month {
   opacity: 0.44;
+}
+
+.calendar-cell.today {
+  border-color: #0f766e;
+  background: #edf8f4;
+  box-shadow: inset 0 0 0 2px rgba(15, 118, 110, 0.18);
+}
+
+.calendar-cell.today .date-label {
+  width: fit-content;
+  min-width: 2.1em;
+  border-radius: 999px;
+  background: #0f766e;
+  color: #fff;
+  padding: 2px 7px;
+  text-align: center;
+  font-weight: 700;
 }
 
 .date-label {
@@ -238,6 +327,20 @@ button {
   font-size: 0.74rem;
   padding: 3px 6px;
   line-height: 1.32;
+  border-left: 4px solid transparent;
+  font-weight: 700;
+}
+
+.event-chip.room-31-205 {
+  background: #d4eee9;
+  color: #0c3d39;
+  border-left-color: #0f766e;
+}
+
+.event-chip.room-31-202 {
+  background: #fdebc8;
+  color: #7a3d08;
+  border-left-color: #b45309;
 }
 
 .reservation-list {
@@ -254,6 +357,13 @@ button {
   font-weight: 700;
 }
 
+.list-range {
+  margin: -6px 0 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 .reservation-item {
   border: 1px solid #d7ccb9;
   border-radius: 12px;
@@ -263,15 +373,36 @@ button {
   justify-content: space-between;
   gap: 12px;
   align-items: center;
+  border-left-width: 6px;
+}
+
+.reservation-item.room-31-205 {
+  border-left-color: #0f766e;
+  background: #f2fbf8;
+}
+
+.reservation-item.room-31-202 {
+  border-left-color: #b45309;
+  background: #fff7e8;
+}
+
+.reservation-item.room-31-205 .reservation-room {
+  color: #0f5f59;
+}
+
+.reservation-item.room-31-202 .reservation-room {
+  color: #92400e;
 }
 
 .reservation-time,
+.reservation-room,
 .reservation-purpose,
 .reservation-booker {
   margin: 0;
 }
 
-.reservation-time {
+.reservation-time,
+.reservation-room {
   font-weight: 700;
 }
 
@@ -292,6 +423,44 @@ button {
   white-space: nowrap;
 }
 
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(28, 34, 32, 0.42);
+}
+
+.modal-backdrop[hidden] {
+  display: none !important;
+}
+
+.modal {
+  width: min(760px, 96vw);
+  max-height: 92vh;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fffdf8;
+  padding: 18px;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.24);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.modal-action-group {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
 @keyframes rise {
   from {
     opacity: 0;
@@ -310,6 +479,11 @@ button {
 
   .calendar-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .calendar-grid.week-view,
+  .calendar-grid.day-view {
+    grid-template-columns: 1fr;
   }
 
   .calendar-cell {

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Room Reservation Calendar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-a" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape-b" aria-hidden="true"></div>
+
+    <main class="app">
+      <header class="hero">
+        <p class="language-switch"><a href="./index.html" lang="ja">日本語</a></p>
+        <p class="eyebrow">Reserve System</p>
+        <h1>Meeting Room Reservation Calendar</h1>
+        <p class="subtitle">Manage dates, purposes, and bookers in one place. Overlapping reservations are flagged immediately when submitted.</p>
+      </header>
+
+      <section class="panel form-panel collapsed" aria-labelledby="form-title">
+        <div class="collapsible-header">
+          <h2 id="form-title">New reservation</h2>
+          <button id="toggle-form" type="button" class="ghost" aria-expanded="false" aria-controls="reservation-form">Open</button>
+        </div>
+        <form id="reservation-form" class="reservation-form" hidden>
+          <div class="field-row">
+            <label>Room<select id="room" required><option value="31-205" selected>31-205</option><option value="31-202">31-202</option></select></label>
+            <label>Start date and time<input type="datetime-local" id="startAt" required /></label>
+            <label>End date and time<input type="datetime-local" id="endAt" required /></label>
+            <label>Repeat<select id="repeatType"><option value="none">Does not repeat</option><option value="weekly">Weekly</option><option value="biweekly">Every two weeks</option><option value="monthly">Monthly</option></select></label>
+            <label id="repeat-until-field" hidden>Repeat until<input type="date" id="repeatUntil" /></label>
+          </div>
+          <div class="field-row">
+            <label>Purpose<input type="text" id="purpose" placeholder="e.g., Seminar meeting" maxlength="120" required /></label>
+            <label>Booked by<input type="text" id="booker" placeholder="e.g., Minoru Nakazawa" maxlength="80" required /></label>
+            <label>Reservation PIN<input type="password" id="deletePin" placeholder="PIN used to edit or delete" minlength="4" maxlength="32" autocomplete="new-password" required /></label>
+          </div>
+          <div class="actions"><button type="submit" class="primary">Create reservation</button></div>
+        </form>
+      </section>
+
+      <section class="panel calendar-panel" aria-labelledby="calendar-title">
+        <div class="calendar-header">
+          <h2 id="calendar-title">Calendar</h2>
+          <div class="calendar-view-switch" role="group" aria-label="Calendar view">
+            <button id="view-month" type="button" class="view-btn active" data-view="month" aria-pressed="true">Month</button>
+            <button id="view-week" type="button" class="view-btn" data-view="week" aria-pressed="false">Week</button>
+            <button id="view-day" type="button" class="view-btn" data-view="day" aria-pressed="false">Day</button>
+          </div>
+          <div class="calendar-nav" role="group" aria-label="Calendar navigation">
+            <button id="prev-month" type="button" class="ghost">Previous</button><p id="current-month" class="month-label"></p><button id="next-month" type="button" class="ghost">Next</button>
+          </div>
+        </div>
+        <div id="calendar-grid" class="calendar-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="panel list-panel" aria-labelledby="list-title">
+        <h2 id="list-title">Reservations</h2><p class="room-tag">Rooms: 31-205 / 31-202</p><p id="reservation-list-range" class="list-range"></p><ul id="reservation-list" class="reservation-list"></ul>
+      </section>
+    </main>
+
+    <div id="edit-modal" class="modal-backdrop" hidden>
+      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="edit-title">
+        <h2 id="edit-title">Edit reservation</h2>
+        <form id="edit-form" class="reservation-form">
+          <input type="hidden" id="editId" />
+          <div class="field-row">
+            <label>Room<select id="editRoom" required><option value="31-205">31-205</option><option value="31-202">31-202</option></select></label>
+            <label>Start date and time<input type="datetime-local" id="editStartAt" required /></label><label>End date and time<input type="datetime-local" id="editEndAt" required /></label>
+          </div>
+          <div class="field-row">
+            <label>Purpose<input type="text" id="editPurpose" maxlength="120" required /></label><label>Booked by<input type="text" id="editBooker" maxlength="80" required /></label><label>Reservation PIN<input type="password" id="editDeletePin" minlength="4" maxlength="32" autocomplete="current-password" required /></label>
+          </div>
+          <div class="modal-actions"><button type="button" id="editDelete" class="danger delete-btn">Delete</button><div class="modal-action-group"><button type="button" id="editCancel" class="ghost">Cancel</button><button type="submit" class="primary">Save changes</button></div></div>
+        </form>
+      </section>
+    </div>
+
+    <template id="reservation-item-template"><li class="reservation-item"><div class="reservation-meta"><p class="reservation-time"></p><p class="reservation-room"></p><p class="reservation-purpose"></p><p class="reservation-booker"></p></div><button type="button" class="danger delete-btn">Delete</button></li></template>
+    <script src="./config.js"></script><script src="./app.js"></script>
+  </body>
+</html>

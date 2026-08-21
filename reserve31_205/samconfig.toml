@@ -1,0 +1,14 @@
+version = 0.1
+
+[default.deploy.parameters]
+stack_name = "reserve31-205"
+resolve_s3 = true
+s3_prefix = "reserve31-205"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
+disable_rollback = true
+parameter_overrides = "AlarmEmail=\"nakazawa@infor.kanazawa-it.ac.jp\" AllowedCorsOrigin=\"https://example.invalid\""
+
+[default.global.parameters]
+region = "ap-northeast-1"

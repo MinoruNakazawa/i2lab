@@ -1,0 +1,9 @@
+node_modules/
+.aws-sam/
+.npm-cache/
+data/
+.env
+.env.local
+config.js
+samconfig.toml
+npm-debug.log*
