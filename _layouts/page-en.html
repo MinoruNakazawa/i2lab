@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Nakazawa Lab</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Nakazawa Lab at Kanazawa Institute of Technology.{% endif %}">
+    {% seo %}
+    {% include head-custom.html %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/page.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-brand" href="{{ '/en/' | relative_url }}">Nakazawa Lab</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="{{ '/en/' | relative_url }}#research">Research</a>
+          <a href="{{ '/en/' | relative_url }}#news">News</a>
+          <a href="{{ '/en/' | relative_url }}#visit">Visit</a>
+          <a href="{{ '/' | relative_url }}" lang="ja">日本語</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main"><div class="container"><article class="page-card markdown-body">{{ content }}</article></div></main>
+    <footer class="site-footer"><div class="container site-footer__inner"><p>Kanazawa Institute of Technology / Minoru Nakazawa Laboratory</p><p><a href="https://github.com/MinoruNakazawa/i2lab">GitHub</a></p></div></footer>
+  </body>
+</html>
