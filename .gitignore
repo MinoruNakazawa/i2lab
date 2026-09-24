@@ -1,2 +1,6 @@
 # Original PDIII presentation materials are kept locally for reference.
 docs/2025/
+
+# Publish the open campus posters as PDFs; keep source slides local.
+2026-member/.DS_Store
+2026-member/poster_spring/*.pptx
