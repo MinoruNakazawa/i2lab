@@ -384,6 +384,47 @@ img {
   gap: 20px;
 }
 
+.x-feed {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  gap: 20px;
+}
+
+.x-feed__intro,
+.x-feed__timeline {
+  min-width: 0;
+  padding: 28px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: var(--shadow);
+}
+
+.x-feed__intro h2 {
+  margin: 0 0 14px;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.x-feed__intro p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.x-feed__intro .button--secondary {
+  margin-top: 12px;
+}
+
+.x-feed__timeline {
+  align-self: start;
+}
+
+.x-feed__note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 .visit-schedule {
   margin: 24px 0;
   padding: 20px 22px;
@@ -422,7 +463,8 @@ img {
   .grid--cards,
   .grid--two,
   .contact-grid,
-  .photo-grid {
+  .photo-grid,
+  .x-feed {
     grid-template-columns: 1fr;
   }
 
@@ -460,6 +502,11 @@ img {
   .card,
   .timeline,
   .contact-card {
+    padding: 22px;
+  }
+
+  .x-feed__intro,
+  .x-feed__timeline {
     padding: 22px;
   }
 
