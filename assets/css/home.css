@@ -384,6 +384,28 @@ img {
   gap: 20px;
 }
 
+.visit-schedule {
+  margin: 24px 0;
+  padding: 20px 22px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(15, 118, 110, 0.2);
+  background: var(--accent-soft);
+}
+
+.visit-schedule .meta {
+  color: var(--accent-strong);
+  font-weight: 700;
+}
+
+.visit-schedule strong {
+  display: block;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+}
+
+.visit-schedule p {
+  margin: 10px 0 0;
+}
+
 .site-footer {
   margin-top: 40px;
   border-top: 1px solid rgba(19, 33, 45, 0.08);
