@@ -25,3 +25,9 @@ description: 中沢研究室の2026年度学部生によるPD3中間発表のテ
 | 佐藤 駿平 | [SNS内を対象とした炎上抑制アプリ](./2026-member/2026thesis_all/posters/sato.pdf) |
 | 山本 泰成 | [DID/VCを用いたスマートフォン学生証と出席確認システム](./2026-member/2026thesis_all/posters/yamamoto.pdf) |
 | マルチェンコ・ダニール | [四足歩行ロボットの無人運用に向けた自律充電システムの開発と評価](./2026-member/2026thesis_all/posters/malchenko.pdf) |
+
+## 落合メソッド版ポスター
+
+各研究を「どんなものか」「先行研究との差」「手法のキモ」「検証」「議論」「次に読む文献」の6つの問いでまとめたA4ポスターです。
+
+[落合メソッド版ポスター一覧（PDF・PNG）を見る](./2026thesis_ochiai.html)
