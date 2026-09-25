@@ -4,3 +4,7 @@ docs/2025/
 # Publish the open campus posters as PDFs; keep source slides local.
 2026-member/.DS_Store
 2026-member/poster_spring/*.pptx
+
+# Publish the PDIII midterm PDFs; keep the original presentations and order workbook local.
+2026-member/2026thesis_all/midterm/*.pptx
+2026-member/2026thesis_all/midterm/*.xlsx
