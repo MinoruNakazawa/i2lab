@@ -8,6 +8,13 @@ extra_css: /assets/css/open-campus.css
 
 中沢研究室が春・夏のKITオープンキャンパスで紹介した研究と展示を、ポスターでご覧いただけます。各画像を選ぶとPDFが開きます。
 
+## 展示の様子
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
+  <img src="{{ '/pictures/IMG20260821182803.jpg' | relative_url }}" alt="展示された四足歩行ロボットとヒューマノイドロボット" style="width: 100%; max-width: 360px; height: auto;" loading="lazy">
+  <img src="{{ '/pictures/IMG20260718113222.jpg' | relative_url }}" alt="画面に表示されたバーチャル案内役の展示" style="width: 100%; max-width: 360px; height: auto;" loading="lazy">
+</div>
+
 <nav class="poster-nav" aria-label="ポスター一覧">
   <a href="#spring">春の展示（12件）</a>
   <a href="#summer">夏の展示（9件）</a>
