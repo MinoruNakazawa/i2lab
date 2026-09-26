@@ -31,8 +31,13 @@ title: 2027年度 3年生向け研究室案内
 ### 研究室の様子
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
-  <img src="{{ '/pictures/IMG20260719161323.jpg' | relative_url }}" alt="学生とロボットの集合写真" style="width: 100%; max-width: 360px; height: auto;" loading="lazy">
-  <img src="{{ '/pictures/IMG20260718110631.jpg' | relative_url }}" alt="研究室の展示とNVIDIA Partnerのサイン" style="width: 100%; max-width: 360px; height: auto;" loading="lazy">
+  <img src="{{ '/pictures/IMG20260719161323.jpg' | relative_url }}" alt="学生とロボットの集合写真" style="width: 100%; max-width: 260px; height: auto;" loading="lazy">
+  <img src="{{ '/pictures/IMG20260718110631.jpg' | relative_url }}" alt="研究室の展示とNVIDIA Partnerのサイン" style="width: 100%; max-width: 260px; height: auto;" loading="lazy">
+  <img src="{{ '/pictures/IMG20260718112926.jpg' | relative_url }}" alt="機器を搭載した四足歩行ロボット" style="width: 100%; max-width: 260px; height: auto;" loading="lazy">
+  <img src="{{ '/pictures/IMG20260718112946.jpg' | relative_url }}" alt="交通環境の三次元計測とモデル化の展示" style="width: 100%; max-width: 260px; height: auto;" loading="lazy">
+  <img src="{{ '/pictures/IMG20260718112951.jpg' | relative_url }}" alt="交通量調査と車両軌跡の研究展示" style="width: 100%; max-width: 260px; height: auto;" loading="lazy">
+  <img src="{{ '/pictures/IMG20260718113116.jpg' | relative_url }}" alt="車両走行シミュレーションの研究展示" style="width: 100%; max-width: 260px; height: auto;" loading="lazy">
+  <img src="{{ '/pictures/IMG20260718113217.jpg' | relative_url }}" alt="倉庫の安全管理に関する研究展示" style="width: 100%; max-width: 260px; height: auto;" loading="lazy">
 </div>
 
 ## 配属希望の申請について
