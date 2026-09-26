@@ -28,6 +28,13 @@ title: 2027年度 3年生向け研究室案内
 - [2025年度の研究テーマ一覧](./2025thesis_all.md)
 - [2026年度の学部生の研究テーマ一覧](./2026thesis_all.md)
 
+### 研究室の様子
+
+<div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
+  <img src="{{ '/pictures/IMG20260719161323.jpg' | relative_url }}" alt="学生とロボットの集合写真" style="width: 100%; max-width: 360px; height: auto;" loading="lazy">
+  <img src="{{ '/pictures/IMG20260718110631.jpg' | relative_url }}" alt="研究室の展示とNVIDIA Partnerのサイン" style="width: 100%; max-width: 360px; height: auto;" loading="lazy">
+</div>
+
 ## 配属希望の申請について
 
 学科の案内では、配属希望順位の電子申請期間は**9月28日（月）～10月3日（土）12:00（正午）**、配属結果の発表は**10月7日（水）13:00**です。申請方法などの詳細は、学科からの案内を確認してください。研究室の見学と配属希望の申請は別の手続きです。
