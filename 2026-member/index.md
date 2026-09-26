@@ -8,16 +8,10 @@ extra_css: /assets/css/open-campus.css
 
 中沢研究室が春・夏のKITオープンキャンパスで紹介した研究と展示を、ポスターでご覧いただけます。各画像を選ぶとPDFが開きます。
 
-## 展示の様子
-
-<div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-start;">
-  <img src="{{ '/pictures/IMG20260821182803.jpg' | relative_url }}" alt="展示された四足歩行ロボットとヒューマノイドロボット" style="width: 100%; max-width: 360px; height: auto;" loading="lazy">
-  <img src="{{ '/pictures/IMG20260718113222.jpg' | relative_url }}" alt="画面に表示されたバーチャル案内役の展示" style="width: 100%; max-width: 360px; height: auto;" loading="lazy">
-</div>
-
 <nav class="poster-nav" aria-label="ポスター一覧">
   <a href="#spring">春の展示（12件）</a>
   <a href="#summer">夏の展示（9件）</a>
+  <a href="#gallery">展示の様子</a>
 </nav>
 
 <h2 id="spring">春の展示</h2>
@@ -173,4 +167,28 @@ extra_css: /assets/css/open-campus.css
     <h3>GNSSとUWBのハイブリッド利用による位置推定システム</h3>
     <a class="poster-card__link" href="{{ '/2026-member/poster_summer/%E8%8F%8A%E6%B1%A0%E5%91%A8%E4%B8%96_%E3%82%AA%E3%83%BC%E3%83%95%E3%82%9A%E3%83%B3%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%8F%E3%82%9A%E3%82%B9%E3%83%9B%E3%82%9A%E3%82%B9%E3%82%BF%E3%83%BC_%E4%BF%AE%E6%AD%A3.pdf' | relative_url }}">ポスターPDFを見る</a>
   </article>
+</div>
+
+<h2 id="gallery">展示の様子</h2>
+<div class="exhibit-gallery">
+  <figure>
+    <a href="{{ '/pictures/IMG20260821182803.jpg' | relative_url }}"><img src="{{ '/pictures/IMG20260821182803.jpg' | relative_url }}" alt="四足歩行ロボットとヒューマノイドロボット" loading="lazy"></a>
+    <figcaption>ロボットの展示</figcaption>
+  </figure>
+  <figure>
+    <a href="{{ '/pictures/IMG20260718113222.jpg' | relative_url }}"><img src="{{ '/pictures/IMG20260718113222.jpg' | relative_url }}" alt="画面に表示されたバーチャル案内役" loading="lazy"></a>
+    <figcaption>バーチャル案内役</figcaption>
+  </figure>
+  <figure>
+    <a href="{{ '/pictures/IMG20260718113309.jpg' | relative_url }}"><img src="{{ '/pictures/IMG20260718113309.jpg' | relative_url }}" alt="センサーと点群表示を備えた移動ロボット" loading="lazy"></a>
+    <figcaption>移動ロボットの展示</figcaption>
+  </figure>
+  <figure>
+    <a href="{{ '/pictures/IMG20260718113432.jpg' | relative_url }}"><img src="{{ '/pictures/IMG20260718113432.jpg' | relative_url }}" alt="4D@HOMEのポスターと体験用の椅子・装置" loading="lazy"></a>
+    <figcaption>4D@HOMEの展示</figcaption>
+  </figure>
+  <figure>
+    <a href="{{ '/pictures/IMG20260718131356.jpg' | relative_url }}"><img src="{{ '/pictures/IMG20260718131356.jpg' | relative_url }}" alt="スクリーンを使ったロボット研究の紹介" loading="lazy"></a>
+    <figcaption>研究紹介の様子</figcaption>
+  </figure>
 </div>
