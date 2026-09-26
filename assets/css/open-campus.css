@@ -73,15 +73,15 @@
 
 .exhibit-gallery {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
   margin: 20px 0 40px;
 }
 
 .exhibit-gallery figure {
   min-width: 0;
   margin: 0;
-  padding: 12px;
+  padding: 8px;
   border: 1px solid rgba(19, 33, 45, 0.12);
   border-radius: 12px;
   background: #fff;
@@ -90,7 +90,7 @@
 .exhibit-gallery a {
   display: grid;
   place-items: center;
-  height: 190px;
+  height: 130px;
   background: #f4f6f8;
 }
 
@@ -110,15 +110,21 @@
 }
 
 @media (max-width: 900px) {
-  .poster-grid,
-  .exhibit-gallery {
+  .poster-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .exhibit-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 600px) {
-  .poster-grid,
-  .exhibit-gallery {
+  .poster-grid {
     grid-template-columns: 1fr;
+  }
+
+  .exhibit-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
