@@ -42,7 +42,8 @@ def query_for(day):
 def fetch_day(code, token, day):
     request = Request(f'https://{code}.goatcounter.com/api/v0/stats/total?{query_for(day)}',
                       headers={'Authorization': f'Bearer {token}',
-                               'Content-Type': 'application/json'})
+                               'Content-Type': 'application/json',
+                               'Accept': 'application/json'})
     for attempt in range(4):
         try:
             with urlopen(request, timeout=45) as response:
@@ -57,7 +58,15 @@ def fetch_day(code, token, day):
             return count
         except HTTPError as error:
             if error.code not in (429, 500, 502, 503, 504) or attempt == 3:
-                raise RuntimeError(f'GoatCounter returned HTTP {error.code}; history was not updated.') from None
+                detail = ''
+                try:
+                    body = json.loads(error.read(4096))
+                    message = body.get('error', '')
+                    if isinstance(message, str):
+                        detail = ' ' + message.replace(token, '[redacted]')[:300]
+                except (ValueError, AttributeError):
+                    pass
+                raise RuntimeError(f'GoatCounter returned HTTP {error.code}.{detail} History was not updated.') from None
         except (URLError, TimeoutError):
             if attempt == 3:
                 raise RuntimeError('GoatCounter unavailable; history was not updated.') from None
