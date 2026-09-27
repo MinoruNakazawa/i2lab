@@ -47,11 +47,11 @@ def fetch_day(code, token, day):
         try:
             with urlopen(request, timeout=45) as response:
                 result = json.load(response)
-            # total_utc uses the explicit UTC interval without account timezone
-            # conversion. This dedicated account contains only the shared path.
-            count = result.get('total_utc')
+            # total uses the exact start/end interval. total_utc is a separate
+            # dashboard denominator and may use the account timezone.
+            count = result.get('total')
             if type(count) is not int or count < 0:
-                raise ValueError('Invalid API response: total_utc must be a nonnegative integer.')
+                raise ValueError('Invalid API response: total must be a nonnegative integer.')
             if result.get('total_events') != 0:
                 raise ValueError('Use a dedicated GoatCounter site with no event tracking.')
             return count

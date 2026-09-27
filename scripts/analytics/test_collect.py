@@ -43,9 +43,9 @@ class AnalyticsTests(unittest.TestCase):
 
     def test_invalid_api_not_zero(self):
         from io import StringIO
-        for response in [{'total_utc': -1, 'total_events': 0}, {},
-                         {'total_utc': True, 'total_events': 0},
-                         {'total_utc': 2, 'total_events': 1}]:
+        for response in [{'total': -1, 'total_events': 0}, {},
+                         {'total': True, 'total_events': 0},
+                         {'total': 2, 'total_events': 1}]:
             with patch('collect.urlopen', return_value=StringIO(json.dumps(response))):
                 with self.assertRaises(ValueError):
                     collect.fetch_day('example', 'not-a-real-token', date(2026, 9, 26))
