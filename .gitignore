@@ -8,3 +8,7 @@ docs/2025/
 # Publish the PDIII midterm PDFs; keep the original presentations and order workbook local.
 2026-member/2026thesis_all/midterm/*.pptx
 2026-member/2026thesis_all/midterm/*.xlsx
+
+# Local Python verification cache.
+__pycache__/
+*.pyc

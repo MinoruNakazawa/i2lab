@@ -4,6 +4,10 @@ description: 金沢工業大学 中沢研究室の研究分野、研究成果、
 url: https://minorunakazawa.github.io
 baseurl: /i2lab
 lang: ja
+goatcounter_code: "minorunakazawa"
+exclude:
+  - scripts/analytics
+  - docs/analytics
 og_image: /images/IMG_9896.JPG
 twitter:
   card: summary_large_image

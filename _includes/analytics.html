@@ -1,0 +1,16 @@
+{% if site.goatcounter_code and site.goatcounter_code != '' %}
+<script>
+  // One shared path avoids counting navigation as additional site visitors.
+  if (location.hostname === 'minorunakazawa.github.io' &&
+      (location.pathname === '/i2lab' || location.pathname.indexOf('/i2lab/') === 0)) {
+    window.goatcounter = {
+      path: '/i2lab/', title: 'Nakazawa Lab', referrer: '', no_events: true
+    };
+    var counter = document.createElement('script');
+    counter.async = true;
+    counter.src = 'https://gc.zgo.at/count.js';
+    counter.dataset.goatcounter = 'https://{{ site.goatcounter_code | escape }}.goatcounter.com/count';
+    document.head.appendChild(counter);
+  }
+</script>
+{% endif %}
