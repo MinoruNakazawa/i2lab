@@ -7,12 +7,13 @@
 <path d="M70 270.0 H1070" stroke="#d8dee4"/>
 <text x="58" y="274.0" text-anchor="end" font-size="12">0</text>
 <path d="M70 222.5 H1070" stroke="#d8dee4"/>
-<text x="58" y="226.5" text-anchor="end" font-size="12">1</text>
+<text x="58" y="226.5" text-anchor="end" font-size="12">7</text>
 <path d="M70 175.0 H1070" stroke="#d8dee4"/>
-<text x="58" y="179.0" text-anchor="end" font-size="12">2</text>
+<text x="58" y="179.0" text-anchor="end" font-size="12">14</text>
 <path d="M70 127.5 H1070" stroke="#d8dee4"/>
-<text x="58" y="131.5" text-anchor="end" font-size="12">3</text>
+<text x="58" y="131.5" text-anchor="end" font-size="12">21</text>
 <path d="M70 80.0 H1070" stroke="#d8dee4"/>
-<text x="58" y="84.0" text-anchor="end" font-size="12">4</text>
-<text x="550" y="170" text-anchor="middle">No completed days yet</text>
+<text x="58" y="84.0" text-anchor="end" font-size="12">28</text>
+<rect x="220.00" y="80.00" width="700.00" height="190.00" rx="2" fill="#94a3b8"><title>2026-09-27: 28 (partial)</title></rect>
+<text transform="translate(570.00,285) rotate(-30)" text-anchor="end" font-size="11">2026-09-27*</text>
 </g></svg>
