@@ -1,0 +1,62 @@
+name: Site visitor analytics
+
+on:
+  schedule:
+    - cron: '17 21 * * *' # 06:17 Asia/Tokyo, previous day's complete data
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: site-analytics
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check configuration
+        env:
+          GOATCOUNTER_CODE: ${{ vars.GOATCOUNTER_CODE }}
+          ANALYTICS_START_DATE: ${{ vars.ANALYTICS_START_DATE }}
+          GOATCOUNTER_API_TOKEN: ${{ secrets.GOATCOUNTER_API_TOKEN }}
+        run: |
+          python scripts/analytics/collect.py --check-config
+      - name: Open separate history branch
+        run: |
+          if git ls-remote --exit-code --heads origin analytics; then
+            git fetch origin analytics
+            git worktree add --detach "$RUNNER_TEMP/site-analytics" FETCH_HEAD
+          else
+            status=$?
+            if [ "$status" -ne 2 ]; then exit "$status"; fi
+            mkdir -p "$RUNNER_TEMP/site-analytics"
+            git -C "$RUNNER_TEMP/site-analytics" init -b analytics
+          fi
+      - name: Collect and render
+        env:
+          GOATCOUNTER_CODE: ${{ vars.GOATCOUNTER_CODE }}
+          ANALYTICS_START_DATE: ${{ vars.ANALYTICS_START_DATE }}
+          GOATCOUNTER_API_TOKEN: ${{ secrets.GOATCOUNTER_API_TOKEN }}
+        run: python scripts/analytics/collect.py --output "$RUNNER_TEMP/site-analytics"
+      - name: Save aggregate history
+        run: |
+          cd "$RUNNER_TEMP/site-analytics"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md data charts metadata.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Update site visitor statistics'
+          # Push from the authenticated checkout, including first-run orphan history.
+          git -C "$GITHUB_WORKSPACE" fetch "$RUNNER_TEMP/site-analytics" HEAD
+          git -C "$GITHUB_WORKSPACE" push origin FETCH_HEAD:refs/heads/analytics
+          echo 'Updated [visitor charts](https://github.com/MinoruNakazawa/i2lab/tree/analytics).' >> "$GITHUB_STEP_SUMMARY"
