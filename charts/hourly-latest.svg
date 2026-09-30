@@ -1,53 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="360" viewBox="0 0 1100 360" role="img">
-<title>Hourly visits | 2026-09-27</title>
+<title>Hourly visits | 2026-09-29</title>
 <rect width="100%" height="100%" rx="16" fill="#f6f8fa"/>
 <g font-family="Arial, sans-serif" fill="#1f2937">
-<text x="30" y="32" font-size="21" font-weight="bold">Hourly visits | 2026-09-27</text>
+<text x="30" y="32" font-size="21" font-weight="bold">Hourly visits | 2026-09-29</text>
 <text x="30" y="56" font-size="13">Estimated visits / JST | each bar = one hour | * activation day is partial</text>
 <path d="M70 270.0 H1070" stroke="#d8dee4"/>
 <text x="58" y="274.0" text-anchor="end" font-size="12">0</text>
 <path d="M70 222.5 H1070" stroke="#d8dee4"/>
-<text x="58" y="226.5" text-anchor="end" font-size="12">1</text>
+<text x="58" y="226.5" text-anchor="end" font-size="12">2</text>
 <path d="M70 175.0 H1070" stroke="#d8dee4"/>
-<text x="58" y="179.0" text-anchor="end" font-size="12">2</text>
+<text x="58" y="179.0" text-anchor="end" font-size="12">4</text>
 <path d="M70 127.5 H1070" stroke="#d8dee4"/>
-<text x="58" y="131.5" text-anchor="end" font-size="12">3</text>
+<text x="58" y="131.5" text-anchor="end" font-size="12">6</text>
 <path d="M70 80.0 H1070" stroke="#d8dee4"/>
-<text x="58" y="84.0" text-anchor="end" font-size="12">4</text>
-<rect x="76.25" y="270.00" width="29.17" height="0.00" rx="2" fill="#94a3b8"><title>00:00: 0 (partial)</title></rect>
-<text transform="translate(90.83,285) rotate(-30)" text-anchor="end" font-size="11">00:00*</text>
-<rect x="117.92" y="270.00" width="29.17" height="0.00" rx="2" fill="#94a3b8"><title>01:00: 0 (partial)</title></rect>
-<rect x="159.58" y="270.00" width="29.17" height="0.00" rx="2" fill="#94a3b8"><title>02:00: 0 (partial)</title></rect>
-<text transform="translate(174.17,285) rotate(-30)" text-anchor="end" font-size="11">02:00*</text>
-<rect x="201.25" y="270.00" width="29.17" height="0.00" rx="2" fill="#94a3b8"><title>03:00: 0 (partial)</title></rect>
-<rect x="242.92" y="270.00" width="29.17" height="0.00" rx="2" fill="#94a3b8"><title>04:00: 0 (partial)</title></rect>
-<text transform="translate(257.50,285) rotate(-30)" text-anchor="end" font-size="11">04:00*</text>
-<rect x="284.58" y="270.00" width="29.17" height="0.00" rx="2" fill="#94a3b8"><title>05:00: 0 (partial)</title></rect>
-<rect x="326.25" y="270.00" width="29.17" height="0.00" rx="2" fill="#94a3b8"><title>06:00: 0 (partial)</title></rect>
-<text transform="translate(340.83,285) rotate(-30)" text-anchor="end" font-size="11">06:00*</text>
-<rect x="367.92" y="270.00" width="29.17" height="0.00" rx="2" fill="#94a3b8"><title>07:00: 0 (partial)</title></rect>
-<rect x="409.58" y="270.00" width="29.17" height="0.00" rx="2" fill="#94a3b8"><title>08:00: 0 (partial)</title></rect>
-<text transform="translate(424.17,285) rotate(-30)" text-anchor="end" font-size="11">08:00*</text>
-<rect x="451.25" y="175.00" width="29.17" height="95.00" rx="2" fill="#94a3b8"><title>09:00: 2 (partial)</title></rect>
-<rect x="492.92" y="270.00" width="29.17" height="0.00" rx="2" fill="#94a3b8"><title>10:00: 0 (partial)</title></rect>
-<text transform="translate(507.50,285) rotate(-30)" text-anchor="end" font-size="11">10:00*</text>
-<rect x="534.58" y="127.50" width="29.17" height="142.50" rx="2" fill="#94a3b8"><title>11:00: 3 (partial)</title></rect>
-<rect x="576.25" y="127.50" width="29.17" height="142.50" rx="2" fill="#94a3b8"><title>12:00: 3 (partial)</title></rect>
-<text transform="translate(590.83,285) rotate(-30)" text-anchor="end" font-size="11">12:00*</text>
-<rect x="617.92" y="175.00" width="29.17" height="95.00" rx="2" fill="#94a3b8"><title>13:00: 2 (partial)</title></rect>
-<rect x="659.58" y="80.00" width="29.17" height="190.00" rx="2" fill="#94a3b8"><title>14:00: 4 (partial)</title></rect>
-<text transform="translate(674.17,285) rotate(-30)" text-anchor="end" font-size="11">14:00*</text>
-<rect x="701.25" y="127.50" width="29.17" height="142.50" rx="2" fill="#94a3b8"><title>15:00: 3 (partial)</title></rect>
-<rect x="742.92" y="175.00" width="29.17" height="95.00" rx="2" fill="#94a3b8"><title>16:00: 2 (partial)</title></rect>
-<text transform="translate(757.50,285) rotate(-30)" text-anchor="end" font-size="11">16:00*</text>
-<rect x="784.58" y="175.00" width="29.17" height="95.00" rx="2" fill="#94a3b8"><title>17:00: 2 (partial)</title></rect>
-<rect x="826.25" y="222.50" width="29.17" height="47.50" rx="2" fill="#94a3b8"><title>18:00: 1 (partial)</title></rect>
-<text transform="translate(840.83,285) rotate(-30)" text-anchor="end" font-size="11">18:00*</text>
-<rect x="867.92" y="222.50" width="29.17" height="47.50" rx="2" fill="#94a3b8"><title>19:00: 1 (partial)</title></rect>
-<rect x="909.58" y="175.00" width="29.17" height="95.00" rx="2" fill="#94a3b8"><title>20:00: 2 (partial)</title></rect>
-<text transform="translate(924.17,285) rotate(-30)" text-anchor="end" font-size="11">20:00*</text>
-<rect x="951.25" y="175.00" width="29.17" height="95.00" rx="2" fill="#94a3b8"><title>21:00: 2 (partial)</title></rect>
-<rect x="992.92" y="270.00" width="29.17" height="0.00" rx="2" fill="#94a3b8"><title>22:00: 0 (partial)</title></rect>
-<text transform="translate(1007.50,285) rotate(-30)" text-anchor="end" font-size="11">22:00*</text>
-<rect x="1034.58" y="222.50" width="29.17" height="47.50" rx="2" fill="#94a3b8"><title>23:00: 1 (partial)</title></rect>
+<text x="58" y="84.0" text-anchor="end" font-size="12">8</text>
+<rect x="76.25" y="270.00" width="29.17" height="0.00" rx="2" fill="#2563eb"><title>00:00: 0</title></rect>
+<text transform="translate(90.83,285) rotate(-30)" text-anchor="end" font-size="11">00:00</text>
+<rect x="117.92" y="270.00" width="29.17" height="0.00" rx="2" fill="#2563eb"><title>01:00: 0</title></rect>
+<rect x="159.58" y="270.00" width="29.17" height="0.00" rx="2" fill="#2563eb"><title>02:00: 0</title></rect>
+<text transform="translate(174.17,285) rotate(-30)" text-anchor="end" font-size="11">02:00</text>
+<rect x="201.25" y="270.00" width="29.17" height="0.00" rx="2" fill="#2563eb"><title>03:00: 0</title></rect>
+<rect x="242.92" y="270.00" width="29.17" height="0.00" rx="2" fill="#2563eb"><title>04:00: 0</title></rect>
+<text transform="translate(257.50,285) rotate(-30)" text-anchor="end" font-size="11">04:00</text>
+<rect x="284.58" y="270.00" width="29.17" height="0.00" rx="2" fill="#2563eb"><title>05:00: 0</title></rect>
+<rect x="326.25" y="270.00" width="29.17" height="0.00" rx="2" fill="#2563eb"><title>06:00: 0</title></rect>
+<text transform="translate(340.83,285) rotate(-30)" text-anchor="end" font-size="11">06:00</text>
+<rect x="367.92" y="246.25" width="29.17" height="23.75" rx="2" fill="#2563eb"><title>07:00: 1</title></rect>
+<rect x="409.58" y="270.00" width="29.17" height="0.00" rx="2" fill="#2563eb"><title>08:00: 0</title></rect>
+<text transform="translate(424.17,285) rotate(-30)" text-anchor="end" font-size="11">08:00</text>
+<rect x="451.25" y="246.25" width="29.17" height="23.75" rx="2" fill="#2563eb"><title>09:00: 1</title></rect>
+<rect x="492.92" y="222.50" width="29.17" height="47.50" rx="2" fill="#2563eb"><title>10:00: 2</title></rect>
+<text transform="translate(507.50,285) rotate(-30)" text-anchor="end" font-size="11">10:00</text>
+<rect x="534.58" y="127.50" width="29.17" height="142.50" rx="2" fill="#2563eb"><title>11:00: 6</title></rect>
+<rect x="576.25" y="222.50" width="29.17" height="47.50" rx="2" fill="#2563eb"><title>12:00: 2</title></rect>
+<text transform="translate(590.83,285) rotate(-30)" text-anchor="end" font-size="11">12:00</text>
+<rect x="617.92" y="270.00" width="29.17" height="0.00" rx="2" fill="#2563eb"><title>13:00: 0</title></rect>
+<rect x="659.58" y="222.50" width="29.17" height="47.50" rx="2" fill="#2563eb"><title>14:00: 2</title></rect>
+<text transform="translate(674.17,285) rotate(-30)" text-anchor="end" font-size="11">14:00</text>
+<rect x="701.25" y="246.25" width="29.17" height="23.75" rx="2" fill="#2563eb"><title>15:00: 1</title></rect>
+<rect x="742.92" y="270.00" width="29.17" height="0.00" rx="2" fill="#2563eb"><title>16:00: 0</title></rect>
+<text transform="translate(757.50,285) rotate(-30)" text-anchor="end" font-size="11">16:00</text>
+<rect x="784.58" y="246.25" width="29.17" height="23.75" rx="2" fill="#2563eb"><title>17:00: 1</title></rect>
+<rect x="826.25" y="246.25" width="29.17" height="23.75" rx="2" fill="#2563eb"><title>18:00: 1</title></rect>
+<text transform="translate(840.83,285) rotate(-30)" text-anchor="end" font-size="11">18:00</text>
+<rect x="867.92" y="246.25" width="29.17" height="23.75" rx="2" fill="#2563eb"><title>19:00: 1</title></rect>
+<rect x="909.58" y="270.00" width="29.17" height="0.00" rx="2" fill="#2563eb"><title>20:00: 0</title></rect>
+<text transform="translate(924.17,285) rotate(-30)" text-anchor="end" font-size="11">20:00</text>
+<rect x="951.25" y="270.00" width="29.17" height="0.00" rx="2" fill="#2563eb"><title>21:00: 0</title></rect>
+<rect x="992.92" y="246.25" width="29.17" height="23.75" rx="2" fill="#2563eb"><title>22:00: 1</title></rect>
+<text transform="translate(1007.50,285) rotate(-30)" text-anchor="end" font-size="11">22:00</text>
+<rect x="1034.58" y="222.50" width="29.17" height="47.50" rx="2" fill="#2563eb"><title>23:00: 2</title></rect>
 </g></svg>
