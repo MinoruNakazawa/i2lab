@@ -7,17 +7,23 @@
 <path d="M70 270.0 H1070" stroke="#d8dee4"/>
 <text x="58" y="274.0" text-anchor="end" font-size="12">0</text>
 <path d="M70 222.5 H1070" stroke="#d8dee4"/>
-<text x="58" y="226.5" text-anchor="end" font-size="12">10</text>
+<text x="58" y="226.5" text-anchor="end" font-size="12">15</text>
 <path d="M70 175.0 H1070" stroke="#d8dee4"/>
-<text x="58" y="179.0" text-anchor="end" font-size="12">20</text>
+<text x="58" y="179.0" text-anchor="end" font-size="12">30</text>
 <path d="M70 127.5 H1070" stroke="#d8dee4"/>
-<text x="58" y="131.5" text-anchor="end" font-size="12">30</text>
+<text x="58" y="131.5" text-anchor="end" font-size="12">45</text>
 <path d="M70 80.0 H1070" stroke="#d8dee4"/>
-<text x="58" y="84.0" text-anchor="end" font-size="12">40</text>
-<rect x="120.00" y="137.00" width="233.33" height="133.00" rx="2" fill="#94a3b8"><title>2026-09-27: 28 (partial)</title></rect>
-<text transform="translate(236.67,285) rotate(-30)" text-anchor="end" font-size="11">2026-09-27*</text>
-<rect x="453.33" y="94.25" width="233.33" height="175.75" rx="2" fill="#2563eb"><title>2026-09-28: 37</title></rect>
-<text transform="translate(570.00,285) rotate(-30)" text-anchor="end" font-size="11">2026-09-28</text>
-<rect x="786.67" y="170.25" width="233.33" height="99.75" rx="2" fill="#2563eb"><title>2026-09-29: 21</title></rect>
-<text transform="translate(903.33,285) rotate(-30)" text-anchor="end" font-size="11">2026-09-29</text>
+<text x="58" y="84.0" text-anchor="end" font-size="12">60</text>
+<rect x="95.00" y="181.33" width="116.67" height="88.67" rx="2" fill="#94a3b8"><title>2026-09-27: 28 (partial)</title></rect>
+<text transform="translate(153.33,285) rotate(-30)" text-anchor="end" font-size="11">2026-09-27*</text>
+<rect x="261.67" y="152.83" width="116.67" height="117.17" rx="2" fill="#2563eb"><title>2026-09-28: 37</title></rect>
+<text transform="translate(320.00,285) rotate(-30)" text-anchor="end" font-size="11">2026-09-28</text>
+<rect x="428.33" y="203.50" width="116.67" height="66.50" rx="2" fill="#2563eb"><title>2026-09-29: 21</title></rect>
+<text transform="translate(486.67,285) rotate(-30)" text-anchor="end" font-size="11">2026-09-29</text>
+<rect x="595.00" y="156.00" width="116.67" height="114.00" rx="2" fill="#2563eb"><title>2026-09-30: 36</title></rect>
+<text transform="translate(653.33,285) rotate(-30)" text-anchor="end" font-size="11">2026-09-30</text>
+<rect x="761.67" y="168.67" width="116.67" height="101.33" rx="2" fill="#2563eb"><title>2026-10-01: 32</title></rect>
+<text transform="translate(820.00,285) rotate(-30)" text-anchor="end" font-size="11">2026-10-01</text>
+<rect x="928.33" y="83.17" width="116.67" height="186.83" rx="2" fill="#2563eb"><title>2026-10-02: 59</title></rect>
+<text transform="translate(986.67,285) rotate(-30)" text-anchor="end" font-size="11">2026-10-02</text>
 </g></svg>

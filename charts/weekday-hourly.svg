@@ -30,9 +30,9 @@
 <text x="1030" y="87" text-anchor="middle" font-size="12">23</text>
 <text x="80" y="121" text-anchor="end" font-size="12">Mon (1d)</text>
 <text x="80" y="160" text-anchor="end" font-size="12">Tue (1d)</text>
-<text x="80" y="199" text-anchor="end" font-size="12">Wed (0d)</text>
-<text x="80" y="238" text-anchor="end" font-size="12">Thu (0d)</text>
-<text x="80" y="277" text-anchor="end" font-size="12">Fri (0d)</text>
+<text x="80" y="199" text-anchor="end" font-size="12">Wed (1d)</text>
+<text x="80" y="238" text-anchor="end" font-size="12">Thu (1d)</text>
+<text x="80" y="277" text-anchor="end" font-size="12">Fri (1d)</text>
 <text x="80" y="316" text-anchor="end" font-size="12">Sat (0d)</text>
 <text x="80" y="355" text-anchor="end" font-size="12">Sun (0d)</text>
 <rect x="91" y="98" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Mon 00:00: 0 visits / 1 days</title></rect>
@@ -45,41 +45,41 @@
 <text x="230" y="121" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
 <rect x="251" y="98" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Mon 04:00: 0 visits / 1 days</title></rect>
 <text x="270" y="121" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
-<rect x="291" y="98" width="38" height="36" rx="3" fill="rgb(213,227,252)"><title>Mon 05:00: 1 visits / 1 days</title></rect>
+<rect x="291" y="98" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Mon 05:00: 1 visits / 1 days</title></rect>
 <text x="310" y="121" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
-<rect x="331" y="98" width="38" height="36" rx="3" fill="rgb(213,227,252)"><title>Mon 06:00: 1 visits / 1 days</title></rect>
+<rect x="331" y="98" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Mon 06:00: 1 visits / 1 days</title></rect>
 <text x="350" y="121" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
 <rect x="371" y="98" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Mon 07:00: 0 visits / 1 days</title></rect>
 <text x="390" y="121" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
-<rect x="411" y="98" width="38" height="36" rx="3" fill="rgb(112,154,242)"><title>Mon 08:00: 5 visits / 1 days</title></rect>
-<text x="430" y="121" text-anchor="middle" font-size="11" fill="white">5.0</text>
-<rect x="451" y="98" width="38" height="36" rx="3" fill="rgb(37,99,235)"><title>Mon 09:00: 8 visits / 1 days</title></rect>
+<rect x="411" y="98" width="38" height="36" rx="3" fill="rgb(138,172,245)"><title>Mon 08:00: 5 visits / 1 days</title></rect>
+<text x="430" y="121" text-anchor="middle" font-size="11" fill="#1f2937">5.0</text>
+<rect x="451" y="98" width="38" height="36" rx="3" fill="rgb(77,128,239)"><title>Mon 09:00: 8 visits / 1 days</title></rect>
 <text x="470" y="121" text-anchor="middle" font-size="11" fill="white">8.0</text>
-<rect x="491" y="98" width="38" height="36" rx="3" fill="rgb(213,227,252)"><title>Mon 10:00: 1 visits / 1 days</title></rect>
+<rect x="491" y="98" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Mon 10:00: 1 visits / 1 days</title></rect>
 <text x="510" y="121" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
-<rect x="531" y="98" width="38" height="36" rx="3" fill="rgb(188,209,250)"><title>Mon 11:00: 2 visits / 1 days</title></rect>
+<rect x="531" y="98" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Mon 11:00: 2 visits / 1 days</title></rect>
 <text x="550" y="121" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
 <rect x="571" y="98" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Mon 12:00: 0 visits / 1 days</title></rect>
 <text x="590" y="121" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
-<rect x="611" y="98" width="38" height="36" rx="3" fill="rgb(163,190,247)"><title>Mon 13:00: 3 visits / 1 days</title></rect>
+<rect x="611" y="98" width="38" height="36" rx="3" fill="rgb(178,201,249)"><title>Mon 13:00: 3 visits / 1 days</title></rect>
 <text x="630" y="121" text-anchor="middle" font-size="11" fill="#1f2937">3.0</text>
-<rect x="651" y="98" width="38" height="36" rx="3" fill="rgb(188,209,250)"><title>Mon 14:00: 2 visits / 1 days</title></rect>
+<rect x="651" y="98" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Mon 14:00: 2 visits / 1 days</title></rect>
 <text x="670" y="121" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
-<rect x="691" y="98" width="38" height="36" rx="3" fill="rgb(188,209,250)"><title>Mon 15:00: 2 visits / 1 days</title></rect>
+<rect x="691" y="98" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Mon 15:00: 2 visits / 1 days</title></rect>
 <text x="710" y="121" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
-<rect x="731" y="98" width="38" height="36" rx="3" fill="rgb(213,227,252)"><title>Mon 16:00: 1 visits / 1 days</title></rect>
+<rect x="731" y="98" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Mon 16:00: 1 visits / 1 days</title></rect>
 <text x="750" y="121" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
-<rect x="771" y="98" width="38" height="36" rx="3" fill="rgb(163,190,247)"><title>Mon 17:00: 3 visits / 1 days</title></rect>
+<rect x="771" y="98" width="38" height="36" rx="3" fill="rgb(178,201,249)"><title>Mon 17:00: 3 visits / 1 days</title></rect>
 <text x="790" y="121" text-anchor="middle" font-size="11" fill="#1f2937">3.0</text>
-<rect x="811" y="98" width="38" height="36" rx="3" fill="rgb(213,227,252)"><title>Mon 18:00: 1 visits / 1 days</title></rect>
+<rect x="811" y="98" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Mon 18:00: 1 visits / 1 days</title></rect>
 <text x="830" y="121" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
 <rect x="851" y="98" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Mon 19:00: 0 visits / 1 days</title></rect>
 <text x="870" y="121" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
-<rect x="891" y="98" width="38" height="36" rx="3" fill="rgb(188,209,250)"><title>Mon 20:00: 2 visits / 1 days</title></rect>
+<rect x="891" y="98" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Mon 20:00: 2 visits / 1 days</title></rect>
 <text x="910" y="121" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
-<rect x="931" y="98" width="38" height="36" rx="3" fill="rgb(188,209,250)"><title>Mon 21:00: 2 visits / 1 days</title></rect>
+<rect x="931" y="98" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Mon 21:00: 2 visits / 1 days</title></rect>
 <text x="950" y="121" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
-<rect x="971" y="98" width="38" height="36" rx="3" fill="rgb(163,190,247)"><title>Mon 22:00: 3 visits / 1 days</title></rect>
+<rect x="971" y="98" width="38" height="36" rx="3" fill="rgb(178,201,249)"><title>Mon 22:00: 3 visits / 1 days</title></rect>
 <text x="990" y="121" text-anchor="middle" font-size="11" fill="#1f2937">3.0</text>
 <rect x="1011" y="98" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Mon 23:00: 0 visits / 1 days</title></rect>
 <text x="1030" y="121" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
@@ -97,184 +97,184 @@
 <text x="310" y="160" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
 <rect x="331" y="137" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Tue 06:00: 0 visits / 1 days</title></rect>
 <text x="350" y="160" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
-<rect x="371" y="137" width="38" height="36" rx="3" fill="rgb(213,227,252)"><title>Tue 07:00: 1 visits / 1 days</title></rect>
+<rect x="371" y="137" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Tue 07:00: 1 visits / 1 days</title></rect>
 <text x="390" y="160" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
 <rect x="411" y="137" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Tue 08:00: 0 visits / 1 days</title></rect>
 <text x="430" y="160" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
-<rect x="451" y="137" width="38" height="36" rx="3" fill="rgb(213,227,252)"><title>Tue 09:00: 1 visits / 1 days</title></rect>
+<rect x="451" y="137" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Tue 09:00: 1 visits / 1 days</title></rect>
 <text x="470" y="160" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
-<rect x="491" y="137" width="38" height="36" rx="3" fill="rgb(188,209,250)"><title>Tue 10:00: 2 visits / 1 days</title></rect>
+<rect x="491" y="137" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Tue 10:00: 2 visits / 1 days</title></rect>
 <text x="510" y="160" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
-<rect x="531" y="137" width="38" height="36" rx="3" fill="rgb(87,135,240)"><title>Tue 11:00: 6 visits / 1 days</title></rect>
-<text x="550" y="160" text-anchor="middle" font-size="11" fill="white">6.0</text>
-<rect x="571" y="137" width="38" height="36" rx="3" fill="rgb(188,209,250)"><title>Tue 12:00: 2 visits / 1 days</title></rect>
+<rect x="531" y="137" width="38" height="36" rx="3" fill="rgb(117,157,243)"><title>Tue 11:00: 6 visits / 1 days</title></rect>
+<text x="550" y="160" text-anchor="middle" font-size="11" fill="#1f2937">6.0</text>
+<rect x="571" y="137" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Tue 12:00: 2 visits / 1 days</title></rect>
 <text x="590" y="160" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
 <rect x="611" y="137" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Tue 13:00: 0 visits / 1 days</title></rect>
 <text x="630" y="160" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
-<rect x="651" y="137" width="38" height="36" rx="3" fill="rgb(188,209,250)"><title>Tue 14:00: 2 visits / 1 days</title></rect>
+<rect x="651" y="137" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Tue 14:00: 2 visits / 1 days</title></rect>
 <text x="670" y="160" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
-<rect x="691" y="137" width="38" height="36" rx="3" fill="rgb(213,227,252)"><title>Tue 15:00: 1 visits / 1 days</title></rect>
+<rect x="691" y="137" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Tue 15:00: 1 visits / 1 days</title></rect>
 <text x="710" y="160" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
 <rect x="731" y="137" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Tue 16:00: 0 visits / 1 days</title></rect>
 <text x="750" y="160" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
-<rect x="771" y="137" width="38" height="36" rx="3" fill="rgb(213,227,252)"><title>Tue 17:00: 1 visits / 1 days</title></rect>
+<rect x="771" y="137" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Tue 17:00: 1 visits / 1 days</title></rect>
 <text x="790" y="160" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
-<rect x="811" y="137" width="38" height="36" rx="3" fill="rgb(213,227,252)"><title>Tue 18:00: 1 visits / 1 days</title></rect>
+<rect x="811" y="137" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Tue 18:00: 1 visits / 1 days</title></rect>
 <text x="830" y="160" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
-<rect x="851" y="137" width="38" height="36" rx="3" fill="rgb(213,227,252)"><title>Tue 19:00: 1 visits / 1 days</title></rect>
+<rect x="851" y="137" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Tue 19:00: 1 visits / 1 days</title></rect>
 <text x="870" y="160" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
 <rect x="891" y="137" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Tue 20:00: 0 visits / 1 days</title></rect>
 <text x="910" y="160" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
 <rect x="931" y="137" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Tue 21:00: 0 visits / 1 days</title></rect>
 <text x="950" y="160" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
-<rect x="971" y="137" width="38" height="36" rx="3" fill="rgb(213,227,252)"><title>Tue 22:00: 1 visits / 1 days</title></rect>
+<rect x="971" y="137" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Tue 22:00: 1 visits / 1 days</title></rect>
 <text x="990" y="160" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
-<rect x="1011" y="137" width="38" height="36" rx="3" fill="rgb(188,209,250)"><title>Tue 23:00: 2 visits / 1 days</title></rect>
+<rect x="1011" y="137" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Tue 23:00: 2 visits / 1 days</title></rect>
 <text x="1030" y="160" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
-<rect x="91" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 00:00: 0 visits / 0 days</title></rect>
-<text x="110" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="131" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 01:00: 0 visits / 0 days</title></rect>
-<text x="150" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="171" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 02:00: 0 visits / 0 days</title></rect>
-<text x="190" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="211" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 03:00: 0 visits / 0 days</title></rect>
-<text x="230" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="251" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 04:00: 0 visits / 0 days</title></rect>
-<text x="270" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="291" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 05:00: 0 visits / 0 days</title></rect>
-<text x="310" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="331" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 06:00: 0 visits / 0 days</title></rect>
-<text x="350" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="371" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 07:00: 0 visits / 0 days</title></rect>
-<text x="390" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="411" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 08:00: 0 visits / 0 days</title></rect>
-<text x="430" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="451" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 09:00: 0 visits / 0 days</title></rect>
-<text x="470" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="491" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 10:00: 0 visits / 0 days</title></rect>
-<text x="510" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="531" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 11:00: 0 visits / 0 days</title></rect>
-<text x="550" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="571" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 12:00: 0 visits / 0 days</title></rect>
-<text x="590" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="611" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 13:00: 0 visits / 0 days</title></rect>
-<text x="630" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="651" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 14:00: 0 visits / 0 days</title></rect>
-<text x="670" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="691" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 15:00: 0 visits / 0 days</title></rect>
-<text x="710" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="731" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 16:00: 0 visits / 0 days</title></rect>
-<text x="750" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="771" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 17:00: 0 visits / 0 days</title></rect>
-<text x="790" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="811" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 18:00: 0 visits / 0 days</title></rect>
-<text x="830" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="851" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 19:00: 0 visits / 0 days</title></rect>
-<text x="870" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="891" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 20:00: 0 visits / 0 days</title></rect>
-<text x="910" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="931" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 21:00: 0 visits / 0 days</title></rect>
-<text x="950" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="971" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 22:00: 0 visits / 0 days</title></rect>
-<text x="990" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="1011" y="176" width="38" height="36" rx="3" fill="#e5e7eb"><title>Wed 23:00: 0 visits / 0 days</title></rect>
-<text x="1030" y="199" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="91" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 00:00: 0 visits / 0 days</title></rect>
-<text x="110" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="131" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 01:00: 0 visits / 0 days</title></rect>
-<text x="150" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="171" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 02:00: 0 visits / 0 days</title></rect>
-<text x="190" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="211" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 03:00: 0 visits / 0 days</title></rect>
-<text x="230" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="251" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 04:00: 0 visits / 0 days</title></rect>
-<text x="270" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="291" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 05:00: 0 visits / 0 days</title></rect>
-<text x="310" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="331" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 06:00: 0 visits / 0 days</title></rect>
-<text x="350" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="371" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 07:00: 0 visits / 0 days</title></rect>
-<text x="390" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="411" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 08:00: 0 visits / 0 days</title></rect>
-<text x="430" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="451" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 09:00: 0 visits / 0 days</title></rect>
-<text x="470" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="491" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 10:00: 0 visits / 0 days</title></rect>
-<text x="510" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="531" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 11:00: 0 visits / 0 days</title></rect>
-<text x="550" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="571" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 12:00: 0 visits / 0 days</title></rect>
-<text x="590" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="611" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 13:00: 0 visits / 0 days</title></rect>
-<text x="630" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="651" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 14:00: 0 visits / 0 days</title></rect>
-<text x="670" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="691" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 15:00: 0 visits / 0 days</title></rect>
-<text x="710" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="731" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 16:00: 0 visits / 0 days</title></rect>
-<text x="750" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="771" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 17:00: 0 visits / 0 days</title></rect>
-<text x="790" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="811" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 18:00: 0 visits / 0 days</title></rect>
-<text x="830" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="851" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 19:00: 0 visits / 0 days</title></rect>
-<text x="870" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="891" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 20:00: 0 visits / 0 days</title></rect>
-<text x="910" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="931" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 21:00: 0 visits / 0 days</title></rect>
-<text x="950" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="971" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 22:00: 0 visits / 0 days</title></rect>
-<text x="990" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="1011" y="215" width="38" height="36" rx="3" fill="#e5e7eb"><title>Thu 23:00: 0 visits / 0 days</title></rect>
-<text x="1030" y="238" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="91" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 00:00: 0 visits / 0 days</title></rect>
-<text x="110" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="131" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 01:00: 0 visits / 0 days</title></rect>
-<text x="150" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="171" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 02:00: 0 visits / 0 days</title></rect>
-<text x="190" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="211" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 03:00: 0 visits / 0 days</title></rect>
-<text x="230" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="251" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 04:00: 0 visits / 0 days</title></rect>
-<text x="270" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="291" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 05:00: 0 visits / 0 days</title></rect>
-<text x="310" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="331" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 06:00: 0 visits / 0 days</title></rect>
-<text x="350" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="371" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 07:00: 0 visits / 0 days</title></rect>
-<text x="390" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="411" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 08:00: 0 visits / 0 days</title></rect>
-<text x="430" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="451" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 09:00: 0 visits / 0 days</title></rect>
-<text x="470" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="491" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 10:00: 0 visits / 0 days</title></rect>
-<text x="510" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="531" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 11:00: 0 visits / 0 days</title></rect>
-<text x="550" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="571" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 12:00: 0 visits / 0 days</title></rect>
-<text x="590" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="611" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 13:00: 0 visits / 0 days</title></rect>
-<text x="630" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="651" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 14:00: 0 visits / 0 days</title></rect>
-<text x="670" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="691" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 15:00: 0 visits / 0 days</title></rect>
-<text x="710" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="731" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 16:00: 0 visits / 0 days</title></rect>
-<text x="750" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="771" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 17:00: 0 visits / 0 days</title></rect>
-<text x="790" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="811" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 18:00: 0 visits / 0 days</title></rect>
-<text x="830" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="851" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 19:00: 0 visits / 0 days</title></rect>
-<text x="870" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="891" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 20:00: 0 visits / 0 days</title></rect>
-<text x="910" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="931" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 21:00: 0 visits / 0 days</title></rect>
-<text x="950" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="971" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 22:00: 0 visits / 0 days</title></rect>
-<text x="990" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
-<rect x="1011" y="254" width="38" height="36" rx="3" fill="#e5e7eb"><title>Fri 23:00: 0 visits / 0 days</title></rect>
-<text x="1030" y="277" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
+<rect x="91" y="176" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Wed 00:00: 1 visits / 1 days</title></rect>
+<text x="110" y="199" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="131" y="176" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Wed 01:00: 0 visits / 1 days</title></rect>
+<text x="150" y="199" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="171" y="176" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Wed 02:00: 0 visits / 1 days</title></rect>
+<text x="190" y="199" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="211" y="176" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Wed 03:00: 1 visits / 1 days</title></rect>
+<text x="230" y="199" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="251" y="176" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Wed 04:00: 0 visits / 1 days</title></rect>
+<text x="270" y="199" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="291" y="176" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Wed 05:00: 0 visits / 1 days</title></rect>
+<text x="310" y="199" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="331" y="176" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Wed 06:00: 1 visits / 1 days</title></rect>
+<text x="350" y="199" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="371" y="176" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Wed 07:00: 2 visits / 1 days</title></rect>
+<text x="390" y="199" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="411" y="176" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Wed 08:00: 2 visits / 1 days</title></rect>
+<text x="430" y="199" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="451" y="176" width="38" height="36" rx="3" fill="rgb(77,128,239)"><title>Wed 09:00: 8 visits / 1 days</title></rect>
+<text x="470" y="199" text-anchor="middle" font-size="11" fill="white">8.0</text>
+<rect x="491" y="176" width="38" height="36" rx="3" fill="rgb(178,201,249)"><title>Wed 10:00: 3 visits / 1 days</title></rect>
+<text x="510" y="199" text-anchor="middle" font-size="11" fill="#1f2937">3.0</text>
+<rect x="531" y="176" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Wed 11:00: 2 visits / 1 days</title></rect>
+<text x="550" y="199" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="571" y="176" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Wed 12:00: 2 visits / 1 days</title></rect>
+<text x="590" y="199" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="611" y="176" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Wed 13:00: 0 visits / 1 days</title></rect>
+<text x="630" y="199" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="651" y="176" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Wed 14:00: 2 visits / 1 days</title></rect>
+<text x="670" y="199" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="691" y="176" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Wed 15:00: 0 visits / 1 days</title></rect>
+<text x="710" y="199" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="731" y="176" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Wed 16:00: 0 visits / 1 days</title></rect>
+<text x="750" y="199" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="771" y="176" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Wed 17:00: 1 visits / 1 days</title></rect>
+<text x="790" y="199" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="811" y="176" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Wed 18:00: 2 visits / 1 days</title></rect>
+<text x="830" y="199" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="851" y="176" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Wed 19:00: 1 visits / 1 days</title></rect>
+<text x="870" y="199" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="891" y="176" width="38" height="36" rx="3" fill="rgb(178,201,249)"><title>Wed 20:00: 3 visits / 1 days</title></rect>
+<text x="910" y="199" text-anchor="middle" font-size="11" fill="#1f2937">3.0</text>
+<rect x="931" y="176" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Wed 21:00: 1 visits / 1 days</title></rect>
+<text x="950" y="199" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="971" y="176" width="38" height="36" rx="3" fill="rgb(178,201,249)"><title>Wed 22:00: 3 visits / 1 days</title></rect>
+<text x="990" y="199" text-anchor="middle" font-size="11" fill="#1f2937">3.0</text>
+<rect x="1011" y="176" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Wed 23:00: 1 visits / 1 days</title></rect>
+<text x="1030" y="199" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="91" y="215" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Thu 00:00: 0 visits / 1 days</title></rect>
+<text x="110" y="238" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="131" y="215" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Thu 01:00: 0 visits / 1 days</title></rect>
+<text x="150" y="238" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="171" y="215" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Thu 02:00: 0 visits / 1 days</title></rect>
+<text x="190" y="238" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="211" y="215" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Thu 03:00: 0 visits / 1 days</title></rect>
+<text x="230" y="238" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="251" y="215" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Thu 04:00: 0 visits / 1 days</title></rect>
+<text x="270" y="238" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="291" y="215" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Thu 05:00: 0 visits / 1 days</title></rect>
+<text x="310" y="238" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="331" y="215" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Thu 06:00: 0 visits / 1 days</title></rect>
+<text x="350" y="238" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="371" y="215" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Thu 07:00: 0 visits / 1 days</title></rect>
+<text x="390" y="238" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="411" y="215" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Thu 08:00: 1 visits / 1 days</title></rect>
+<text x="430" y="238" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="451" y="215" width="38" height="36" rx="3" fill="rgb(117,157,243)"><title>Thu 09:00: 6 visits / 1 days</title></rect>
+<text x="470" y="238" text-anchor="middle" font-size="11" fill="#1f2937">6.0</text>
+<rect x="491" y="215" width="38" height="36" rx="3" fill="rgb(138,172,245)"><title>Thu 10:00: 5 visits / 1 days</title></rect>
+<text x="510" y="238" text-anchor="middle" font-size="11" fill="#1f2937">5.0</text>
+<rect x="531" y="215" width="38" height="36" rx="3" fill="rgb(97,143,241)"><title>Thu 11:00: 7 visits / 1 days</title></rect>
+<text x="550" y="238" text-anchor="middle" font-size="11" fill="white">7.0</text>
+<rect x="571" y="215" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Thu 12:00: 1 visits / 1 days</title></rect>
+<text x="590" y="238" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="611" y="215" width="38" height="36" rx="3" fill="rgb(158,187,247)"><title>Thu 13:00: 4 visits / 1 days</title></rect>
+<text x="630" y="238" text-anchor="middle" font-size="11" fill="#1f2937">4.0</text>
+<rect x="651" y="215" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Thu 14:00: 0 visits / 1 days</title></rect>
+<text x="670" y="238" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="691" y="215" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Thu 15:00: 1 visits / 1 days</title></rect>
+<text x="710" y="238" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="731" y="215" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Thu 16:00: 2 visits / 1 days</title></rect>
+<text x="750" y="238" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="771" y="215" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Thu 17:00: 1 visits / 1 days</title></rect>
+<text x="790" y="238" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="811" y="215" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Thu 18:00: 1 visits / 1 days</title></rect>
+<text x="830" y="238" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="851" y="215" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Thu 19:00: 1 visits / 1 days</title></rect>
+<text x="870" y="238" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="891" y="215" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Thu 20:00: 0 visits / 1 days</title></rect>
+<text x="910" y="238" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="931" y="215" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Thu 21:00: 1 visits / 1 days</title></rect>
+<text x="950" y="238" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="971" y="215" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Thu 22:00: 0 visits / 1 days</title></rect>
+<text x="990" y="238" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="1011" y="215" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Thu 23:00: 1 visits / 1 days</title></rect>
+<text x="1030" y="238" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="91" y="254" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Fri 00:00: 0 visits / 1 days</title></rect>
+<text x="110" y="277" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="131" y="254" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Fri 01:00: 2 visits / 1 days</title></rect>
+<text x="150" y="277" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="171" y="254" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Fri 02:00: 2 visits / 1 days</title></rect>
+<text x="190" y="277" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="211" y="254" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Fri 03:00: 0 visits / 1 days</title></rect>
+<text x="230" y="277" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="251" y="254" width="38" height="36" rx="3" fill="rgb(218,231,253)"><title>Fri 04:00: 1 visits / 1 days</title></rect>
+<text x="270" y="277" text-anchor="middle" font-size="11" fill="#1f2937">1.0</text>
+<rect x="291" y="254" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Fri 05:00: 0 visits / 1 days</title></rect>
+<text x="310" y="277" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="331" y="254" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Fri 06:00: 0 visits / 1 days</title></rect>
+<text x="350" y="277" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="371" y="254" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Fri 07:00: 0 visits / 1 days</title></rect>
+<text x="390" y="277" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="411" y="254" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Fri 08:00: 2 visits / 1 days</title></rect>
+<text x="430" y="277" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="451" y="254" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Fri 09:00: 2 visits / 1 days</title></rect>
+<text x="470" y="277" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="491" y="254" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Fri 10:00: 2 visits / 1 days</title></rect>
+<text x="510" y="277" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="531" y="254" width="38" height="36" rx="3" fill="rgb(37,99,235)"><title>Fri 11:00: 10 visits / 1 days</title></rect>
+<text x="550" y="277" text-anchor="middle" font-size="11" fill="white">10.0</text>
+<rect x="571" y="254" width="38" height="36" rx="3" fill="rgb(239,246,255)"><title>Fri 12:00: 0 visits / 1 days</title></rect>
+<text x="590" y="277" text-anchor="middle" font-size="11" fill="#1f2937">0.0</text>
+<rect x="611" y="254" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Fri 13:00: 2 visits / 1 days</title></rect>
+<text x="630" y="277" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="651" y="254" width="38" height="36" rx="3" fill="rgb(117,157,243)"><title>Fri 14:00: 6 visits / 1 days</title></rect>
+<text x="670" y="277" text-anchor="middle" font-size="11" fill="#1f2937">6.0</text>
+<rect x="691" y="254" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Fri 15:00: 2 visits / 1 days</title></rect>
+<text x="710" y="277" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="731" y="254" width="38" height="36" rx="3" fill="rgb(178,201,249)"><title>Fri 16:00: 3 visits / 1 days</title></rect>
+<text x="750" y="277" text-anchor="middle" font-size="11" fill="#1f2937">3.0</text>
+<rect x="771" y="254" width="38" height="36" rx="3" fill="rgb(158,187,247)"><title>Fri 17:00: 4 visits / 1 days</title></rect>
+<text x="790" y="277" text-anchor="middle" font-size="11" fill="#1f2937">4.0</text>
+<rect x="811" y="254" width="38" height="36" rx="3" fill="rgb(138,172,245)"><title>Fri 18:00: 5 visits / 1 days</title></rect>
+<text x="830" y="277" text-anchor="middle" font-size="11" fill="#1f2937">5.0</text>
+<rect x="851" y="254" width="38" height="36" rx="3" fill="rgb(198,216,251)"><title>Fri 19:00: 2 visits / 1 days</title></rect>
+<text x="870" y="277" text-anchor="middle" font-size="11" fill="#1f2937">2.0</text>
+<rect x="891" y="254" width="38" height="36" rx="3" fill="rgb(178,201,249)"><title>Fri 20:00: 3 visits / 1 days</title></rect>
+<text x="910" y="277" text-anchor="middle" font-size="11" fill="#1f2937">3.0</text>
+<rect x="931" y="254" width="38" height="36" rx="3" fill="rgb(138,172,245)"><title>Fri 21:00: 5 visits / 1 days</title></rect>
+<text x="950" y="277" text-anchor="middle" font-size="11" fill="#1f2937">5.0</text>
+<rect x="971" y="254" width="38" height="36" rx="3" fill="rgb(178,201,249)"><title>Fri 22:00: 3 visits / 1 days</title></rect>
+<text x="990" y="277" text-anchor="middle" font-size="11" fill="#1f2937">3.0</text>
+<rect x="1011" y="254" width="38" height="36" rx="3" fill="rgb(178,201,249)"><title>Fri 23:00: 3 visits / 1 days</title></rect>
+<text x="1030" y="277" text-anchor="middle" font-size="11" fill="#1f2937">3.0</text>
 <rect x="91" y="293" width="38" height="36" rx="3" fill="#e5e7eb"><title>Sat 00:00: 0 visits / 0 days</title></rect>
 <text x="110" y="316" text-anchor="middle" font-size="11" fill="#1f2937">—</text>
 <rect x="131" y="293" width="38" height="36" rx="3" fill="#e5e7eb"><title>Sat 01:00: 0 visits / 0 days</title></rect>
