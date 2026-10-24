@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>めまい遠隔支援プラットフォーム v0.3</title>
+<style>
+  :root{
+    --navy:#0b2545; --blue:#2764a2; --teal:#0ea5a4; --teal2:#e6f7f6;
+    --orange:#f97316; --amber:#fff4e6; --green:#16a34a; --green2:#eaf8ef;
+    --red:#dc2626; --red2:#fee2e2; --purple:#6d5bd0; --purple2:#eeeafe;
+    --bg:#f6f8fb; --card:#ffffff; --line:#d6e0ea; --text:#172033; --muted:#667085;
+    --shadow:0 8px 24px rgba(18,38,63,.08);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;color:var(--text);}
+  header{background:linear-gradient(135deg,var(--navy),#113b6e);color:white;padding:28px 28px 22px;position:sticky;top:0;z-index:10;box-shadow:0 4px 18px rgba(0,0,0,.18)}
+  h1{margin:0;font-size:26px;line-height:1.25;letter-spacing:.02em}.subtitle{margin-top:8px;color:#d8ecff;font-size:14px}.version{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:4px 10px;font-size:12px;margin-left:8px}
+  .nav{display:flex;gap:8px;overflow-x:auto;padding:14px 24px;background:white;border-bottom:1px solid var(--line);position:sticky;top:104px;z-index:9}
+  .tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;color:var(--navy);font-weight:700;white-space:nowrap;cursor:pointer}.tab.active{background:var(--teal);color:white;border-color:var(--teal)}
+  main{max-width:1220px;margin:0 auto;padding:24px}.panel{display:none}.panel.active{display:block}.grid{display:grid;gap:16px}.grid2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid4{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}.card h2,.card h3{margin:0 0 10px;color:var(--navy)}.card h2{font-size:22px}.card h3{font-size:18px}.muted{color:var(--muted)}.small{font-size:12px}.badge{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:5px 9px;font-weight:700;font-size:12px}.badge.a{background:var(--teal2);color:#087b7b}.badge.b{background:var(--amber);color:#9a4c06}.badge.c{background:var(--purple2);color:#4b3dae}.badge.safe{background:var(--green2);color:#12783a}.badge.warn{background:var(--red2);color:#a90f0f}
+  .hero{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}.message{background:linear-gradient(135deg,#e6f7f6,#eef6ff);border:1px solid #c6e5e6;border-radius:20px;padding:22px}.message h2{font-size:26px;margin:0 0 8px;color:var(--navy)}
+  .flow{display:grid;grid-template-columns:1fr 46px 1fr 46px 1fr;align-items:center;gap:8px}.flow .node{background:white;border:2px solid var(--line);border-radius:20px;min-height:150px;padding:16px;box-shadow:var(--shadow)}.flow .arrow{text-align:center;font-size:30px;color:var(--teal);font-weight:900}.node h3{font-size:18px;margin:0 0 8px}.node ul{margin:8px 0 0 20px;padding:0}.node li{margin:4px 0}
+  .lane{display:grid;grid-template-columns:150px 1fr;gap:12px;margin:12px 0}.lane-label{border-radius:14px;padding:12px;color:white;font-weight:800;text-align:center}.lane-label.a{background:var(--teal)}.lane-label.b{background:var(--orange)}.lane-label.c{background:var(--purple)}.lane-track{background:white;border:1px solid var(--line);border-radius:14px;padding:12px;min-height:64px}.event{display:inline-block;border-radius:12px;padding:8px 10px;margin:4px;background:#f2f6fb;border:1px solid #dbe5ef;font-size:13px}.event.a{background:var(--teal2);border-color:#b9e6e4}.event.b{background:var(--amber);border-color:#f5d3aa}.event.c{background:var(--purple2);border-color:#d5cef7}.event.red{background:var(--red2);border-color:#fab6b6}
+  .formrow{display:grid;grid-template-columns:180px 1fr;gap:12px;align-items:center;margin:12px 0}.formrow label{font-weight:700;color:var(--navy)}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:10px;background:white;font:inherit}textarea{min-height:86px}.range{display:flex;gap:8px;align-items:center}.range input{accent-color:var(--teal)}.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.btn{border:0;border-radius:12px;padding:11px 16px;font-weight:800;cursor:pointer}.primary{background:var(--teal);color:white}.secondary{background:#edf2f7;color:var(--navy)}.danger{background:var(--red);color:white}.outline{background:white;color:var(--navy);border:1px solid var(--line)}
+  .metric{background:white;border:1px solid var(--line);border-radius:16px;padding:14px;text-align:center}.metric strong{display:block;font-size:26px;color:var(--teal);line-height:1}.metric span{font-size:12px;color:var(--muted)}
+  .timeline-box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;overflow-x:auto}.timeline{min-width:900px}.time-row{display:grid;grid-template-columns:120px repeat(14,1fr);gap:4px;align-items:center;margin:8px 0}.time-row .label{font-weight:800;color:var(--navy)}.day{height:34px;border-radius:8px;background:#f1f5f9;border:1px solid #e5edf5;text-align:center;font-size:11px;padding-top:8px}.bar{height:34px;border-radius:8px;text-align:center;font-size:11px;font-weight:700;padding-top:8px}.bar.a{background:var(--teal2);color:#067574}.bar.b{background:var(--amber);color:#974a05}.bar.c{background:var(--purple2);color:#4c40a7}.bar.red{background:var(--red2);color:#a90f0f}
+  .chart{height:250px;background:linear-gradient(to bottom,#fff,#f8fbff);border:1px solid var(--line);border-radius:16px;padding:10px}.legend{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}.dot.teal{background:var(--teal)}.dot.orange{background:var(--orange)}.dot.purple{background:var(--purple)}.dot.red{background:var(--red)}
+  .mock-phone{border:10px solid #111827;border-radius:32px;background:#fff;width:285px;min-height:560px;margin:auto;box-shadow:0 18px 40px rgba(0,0,0,.18);overflow:hidden}.phone-head{background:var(--navy);color:white;padding:16px;text-align:center;font-weight:800}.phone-body{padding:16px}.video{height:180px;background:#111827;border-radius:18px;color:#d1d5db;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:800}.dash{display:grid;grid-template-columns:300px 1fr;gap:16px}.patient-list{display:flex;flex-direction:column;gap:10px}.patient{border:1px solid var(--line);border-radius:14px;padding:12px;background:white}.patient.active{border-color:var(--teal);box-shadow:0 0 0 3px rgba(14,165,164,.15)}
+  table{border-collapse:collapse;width:100%;font-size:13px;background:white}th,td{border:1px solid var(--line);padding:9px;vertical-align:top}th{background:#edf4fb;color:var(--navy);text-align:left}.triage{border-left:6px solid var(--green)}.triage.warn{border-left-color:var(--orange)}.triage.red{border-left-color:var(--red)}
+  .comm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.comm-card{border:1px solid var(--line);border-radius:18px;background:white;padding:16px;box-shadow:var(--shadow)}.comm-card h3{color:var(--navy);margin:0 0 8px}.comm-visual{height:86px;border-radius:16px;background:#f3f8ff;display:flex;align-items:center;justify-content:center;font-size:28px;margin:10px 0}.call-options{display:flex;gap:10px;flex-wrap:wrap}.call-options span{background:#eef2f7;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:700}
+  .footer-note{margin-top:22px;color:var(--muted);font-size:12px}.kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.kpi .metric{min-height:110px}
+  @media (max-width:900px){.hero,.grid2,.grid3,.grid4,.comm-grid,.dash{grid-template-columns:1fr}.flow{grid-template-columns:1fr}.flow .arrow{transform:rotate(90deg)}.nav{top:132px}.formrow{grid-template-columns:1fr}.mock-phone{width:100%}.kpi{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header>
+  <h1>めまい遠隔支援プラットフォーム <span class="version">v0.3 三者連携モデル</span></h1>
+  <div class="subtitle">A：患者の日常記録　B：遠隔地医療者による検査　C：めまい相談医・リハビリ専門による判断と支援</div>
+</header>
+<nav class="nav" aria-label="prototype tabs">
+  <button class="tab active" data-panel="overview">全体像</button>
+  <button class="tab" data-panel="aapp">A 患者アプリ</button>
+  <button class="tab" data-panel="bapp">B 医療者検査アプリ</button>
+  <button class="tab" data-panel="cdash">C 専門家ダッシュボード</button>
+  <button class="tab" data-panel="timeline">時系列ビュー</button>
+  <button class="tab" data-panel="communication">遠隔相談・リハビリ</button>
+  <button class="tab" data-panel="research">MVP検証</button>
+</nav>
+<main>
+<section id="overview" class="panel active">
+  <div class="hero">
+    <div class="message">
+      <h2>コンセプト</h2>
+      <p><strong>患者の日常記録（A）</strong>と、<strong>遠隔地医療者による定期検査（B）</strong>を、<strong>めまい相談医・リハビリ専門（C）</strong>が同じ時系列で確認し、診療・リハビリ方針を判断する。</p>
+      <p class="muted">Aは毎日〜2日に1回の高頻度記録、Bは来院時・1〜2週〜1か月に1回の検査、Cは必要時または定期的に遠隔評価する。</p>
+      <div class="btns"><button class="btn primary" onclick="openPanel('timeline')">時系列ビューを見る</button><button class="btn secondary" onclick="openPanel('cdash')">C画面を見る</button></div>
+    </div>
+    <div class="card">
+      <h2>三者の役割</h2>
+      <div class="grid grid3">
+        <div><span class="badge a">A 患者</span><p>症状・服薬を毎日記録。発作時に目の動きを記録。</p></div>
+        <div><span class="badge b">B 遠隔地医療者</span><p>来院時にSVV/vHIT/OKN/ETT等を実施。ゴーグル検査を支援。</p></div>
+        <div><span class="badge c">C 専門家</span><p>A/Bの記録を見て状態判断、相談、リハビリ方針を提示。</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h2>データの流れ</h2>
+    <div class="flow">
+      <div class="node"><span class="badge a">A</span><h3>日常・発作時</h3><ul><li>症状・服薬・副作用</li><li>転倒/歩行不安</li><li>発作時眼振動画</li><li>リハビリ実施状況</li></ul></div>
+      <div class="arrow">→</div>
+      <div class="node"><span class="badge b">B</span><h3>来院・施設検査</h3><ul><li>SVV / vHIT</li><li>OKN / ETT / Saccade</li><li>ゴーグル検査</li><li>赤旗・バイタル確認</li></ul></div>
+      <div class="arrow">→</div>
+      <div class="node"><span class="badge c">C</span><h3>遠隔判断・支援</h3><ul><li>時系列で確認</li><li>対面受診要否</li><li>検査・リハビリ方針</li><li>遠隔相談/Zoom連携</li></ul></div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h2>測定頻度の基本設計</h2>
+    <div class="lane"><div class="lane-label a">A 患者</div><div class="lane-track"><span class="event a">毎日：症状日誌</span><span class="event a">毎日：服薬/副作用</span><span class="event a">発作時：眼振動画</span><span class="event a">1〜2日に1回：リハビリ実施</span></div></div>
+    <div class="lane"><div class="lane-label b">B 医療者</div><div class="lane-track"><span class="event b">来院時：SVV</span><span class="event b">来院時：vHIT</span><span class="event b">来院時：OKN/ETT</span><span class="event b">1〜2週〜1か月に1回</span></div></div>
+    <div class="lane"><div class="lane-label c">C 専門家</div><div class="lane-track"><span class="event c">定期レビュー</span><span class="event c">悪化時レビュー</span><span class="event c">A-C相談</span><span class="event c">B-C相談</span><span class="event c">A+B-C同席</span></div></div>
+  </div>
+</section>
+<section id="aapp" class="panel">
+  <div class="grid grid2">
+    <div class="card">
+      <h2>A：患者アプリ</h2>
+      <p>患者自身が毎日または1〜2日に1回入力する画面。発作時には目の動きを記録する。</p>
+      <div class="formrow"><label>今日のめまい</label><div class="range"><input type="range" min="0" max="10" value="6"><strong>6/10</strong></div></div>
+      <div class="formrow"><label>めまいの種類</label><select><option>回転性</option><option>浮動感</option><option>ふらつき</option><option>立ちくらみ</option></select></div>
+      <div class="formrow"><label>随伴症状</label><select><option>耳鳴・難聴あり</option><option>悪心あり</option><option>頭痛あり</option><option>神経症状あり</option><option>なし</option></select></div>
+      <div class="formrow"><label>服薬</label><textarea>朝：ベタヒスチン内服。眠気なし。吐き気軽減。</textarea></div>
+      <div class="formrow"><label>前庭リハビリ</label><select><option>実施 10分</option><option>実施 20分</option><option>未実施</option><option>症状悪化で中止</option></select></div>
+      <div class="formrow"><label>発作時眼振</label><div class="video">📹 眼球運動を記録<br><span class="small">ゴーグルまたはスマホ撮影</span></div></div>
+      <div class="btns"><button class="btn primary">今日の記録を保存</button><button class="btn danger">赤旗症状を報告</button><button class="btn secondary">Cへ相談依頼</button></div>
+    </div>
+    <div class="mock-phone">
+      <div class="phone-head">患者アプリ</div>
+      <div class="phone-body">
+        <span class="badge a">今日の記録</span>
+        <h3>症状スコア</h3>
+        <div class="metric"><strong>6</strong><span>/10　昨日より+2</span></div>
+        <h3>発作時記録</h3>
+        <div class="video">眼振動画<br>00:42</div>
+        <p class="small muted">品質判定：瞳孔検出良好 / 手ぶれ少</p>
+        <h3>リハビリ</h3>
+        <div class="metric"><strong>80%</strong><span>今週の実施率</span></div>
+        <button class="btn primary" style="width:100%;margin-top:12px">相談する</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="bapp" class="panel">
+  <div class="grid grid2">
+    <div class="card">
+      <h2>B：遠隔地医療者アプリ</h2>
+      <p>耳鼻科医以外の医療者が、同じiPhoneまたは別のiPadで使用。来院時に検査と安全確認を行う。</p>
+      <table>
+        <tr><th>検査/確認</th><th>入力例</th><th>頻度</th></tr>
+        <tr><td>SVV</td><td>右偏倚 4.2°、再測定可</td><td>1〜2週〜1か月に1回</td></tr>
+        <tr><td>vHIT</td><td>右水平 gain 0.64、catch-up saccadeあり</td><td>来院時</td></tr>
+        <tr><td>OKN</td><td>左右差あり/なし、動画添付</td><td>必要時</td></tr>
+        <tr><td>ETT/Saccade</td><td>追跡不良、saccade latency</td><td>必要時</td></tr>
+        <tr><td>ゴーグル検査</td><td>遮光良好、眼振動画 01:12</td><td>来院時/発作時補助</td></tr>
+        <tr><td>赤旗確認</td><td>麻痺・構音障害・激しい頭痛なし</td><td>毎回</td></tr>
+      </table>
+      <div class="btns"><button class="btn primary">検査結果をCへ送信</button><button class="btn secondary">Zoom/院内端末で接続</button><button class="btn danger">救急/対面受診へ切替</button></div>
+    </div>
+    <div class="card">
+      <h2>B画面モック</h2>
+      <div class="formrow"><label>患者</label><select><option>A-001 佐藤さん</option><option>A-002 鈴木さん</option></select></div>
+      <div class="formrow"><label>使用端末</label><select><option>同じiPhoneで検査</option><option>別iPadで検査</option><option>施設PCで入力</option></select></div>
+      <div class="formrow"><label>検査種別</label><select><option>SVV</option><option>vHIT</option><option>OKN</option><option>ETT</option><option>Saccade</option><option>ゴーグル検査</option></select></div>
+      <div class="formrow"><label>結果</label><textarea>SVV：右偏倚 4.2°。再検査でも同様。歩行時ふらつきあり。赤旗なし。</textarea></div>
+      <div class="grid grid3"><div class="metric"><strong>4.2°</strong><span>SVV偏倚</span></div><div class="metric"><strong>0.64</strong><span>vHIT gain</span></div><div class="metric"><strong>○</strong><span>赤旗なし</span></div></div>
+    </div>
+  </div>
+</section>
+<section id="cdash" class="panel">
+  <div class="dash">
+    <div class="card patient-list">
+      <h2>C：患者一覧</h2>
+      <div class="patient active"><strong>A-001 佐藤さん</strong><br><span class="badge warn">悪化傾向</span><p class="small muted">A記録：13/14日、B検査：3日前</p></div>
+      <div class="patient"><strong>A-002 鈴木さん</strong><br><span class="badge safe">安定</span><p class="small muted">A記録：10/14日、B検査：30日前</p></div>
+      <div class="patient"><strong>A-003 山田さん</strong><br><span class="badge warn">リハビリ未実施</span><p class="small muted">A記録：5/14日、B検査なし</p></div>
+    </div>
+    <div class="card">
+      <h2>C：めまい相談医・リハビリ専門ダッシュボード</h2>
+      <div class="kpi"><div class="metric"><strong>13/14</strong><span>A記録日数</span></div><div class="metric"><strong>1</strong><span>発作時動画</span></div><div class="metric"><strong>4.2°</strong><span>SVV偏倚</span></div><div class="metric"><strong>80%</strong><span>リハビリ実施率</span></div></div>
+      <div class="chart" style="margin-top:14px">
+        <svg width="100%" height="220" viewBox="0 0 720 220" preserveAspectRatio="none" aria-label="症状と検査の推移">
+          <line x1="40" y1="180" x2="700" y2="180" stroke="#cbd5e1"/><line x1="40" y1="30" x2="40" y2="180" stroke="#cbd5e1"/>
+          <polyline points="40,150 90,140 140,120 190,135 240,90 290,80 340,110 390,100 440,75 490,85 540,60 590,70 640,62 690,65" fill="none" stroke="#0ea5a4" stroke-width="4"/>
+          <polyline points="40,165 120,160 200,150 280,140 360,132 440,128 520,120 600,116 690,110" fill="none" stroke="#f97316" stroke-width="4"/>
+          <circle cx="540" cy="60" r="7" fill="#dc2626"/><text x="552" y="56" font-size="12" fill="#dc2626">発作時眼振</text>
+          <circle cx="490" cy="128" r="7" fill="#6d5bd0"/><text x="504" y="128" font-size="12" fill="#6d5bd0">B検査</text>
+        </svg>
+      </div>
+      <div class="legend"><span><i class="dot teal"></i>症状強度</span><span><i class="dot orange"></i>DHI/リハビリ経過</span><span><i class="dot purple"></i>B検査日</span><span><i class="dot red"></i>眼振動画</span></div>
+      <div class="card triage warn" style="margin-top:14px;box-shadow:none"><h3>判断メモ</h3><p>直近1週間で症状スコア上昇。B検査でSVV偏倚が持続。赤旗なし。リハビリを継続し、2週間後にB検査再評価。悪化時はA-C相談を前倒し。</p></div>
+      <div class="btns"><button class="btn primary">Aと遠隔相談</button><button class="btn secondary">Bと検査確認</button><button class="btn secondary">A+B同席で面談</button><button class="btn outline">Zoomリンク発行</button></div>
+    </div>
+  </div>
+</section>
+<section id="timeline" class="panel">
+  <div class="card">
+    <h2>時系列ビュー：Aの高頻度記録とBの定期検査を重ねる</h2>
+    <p class="muted">Cは、この画面で「毎日の症状変化」「発作時動画」「来院時検査」「服薬変更」「リハビリ実施」を同じ時間軸で確認する。</p>
+    <div class="timeline-box"><div class="timeline">
+      <div class="time-row"><div class="label">日付</div><div class="day">1</div><div class="day">2</div><div class="day">3</div><div class="day">4</div><div class="day">5</div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day">9</div><div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day">14</div></div>
+      <div class="time-row"><div class="label">A 症状</div><div class="bar a">4</div><div class="bar a">4</div><div class="bar a">5</div><div class="bar a">-</div><div class="bar a">6</div><div class="bar a">7</div><div class="bar a">6</div><div class="bar a">5</div><div class="bar a">8</div><div class="bar a">7</div><div class="bar a">6</div><div class="bar a">6</div><div class="bar a">5</div><div class="bar a">5</div></div>
+      <div class="time-row"><div class="label">A 眼振</div><div></div><div></div><div></div><div></div><div></div><div class="bar red">動画</div><div></div><div></div><div class="bar red">動画</div><div></div><div></div><div></div><div></div><div></div></div>
+      <div class="time-row"><div class="label">A 服薬</div><div class="bar a">内服</div><div class="bar a">内服</div><div class="bar a">内服</div><div class="bar a">内服</div><div class="bar a">変更</div><div class="bar a">内服</div><div class="bar a">内服</div><div class="bar a">内服</div><div class="bar a">内服</div><div class="bar a">内服</div><div class="bar a">内服</div><div class="bar a">内服</div><div class="bar a">内服</div><div class="bar a">内服</div></div>
+      <div class="time-row"><div class="label">A リハ</div><div class="bar a">○</div><div></div><div class="bar a">○</div><div></div><div class="bar a">○</div><div></div><div class="bar a">○</div><div></div><div class="bar red">中止</div><div class="bar a">○</div><div></div><div class="bar a">○</div><div></div><div class="bar a">○</div></div>
+      <div class="time-row"><div class="label">B 検査</div><div></div><div></div><div></div><div></div><div class="bar b">SVV</div><div></div><div></div><div></div><div></div><div></div><div></div><div class="bar b">vHIT</div><div></div><div></div></div>
+      <div class="time-row"><div class="label">C 判断</div><div></div><div></div><div></div><div></div><div class="bar c">確認</div><div></div><div></div><div></div><div class="bar c">A相談</div><div></div><div></div><div class="bar c">B相談</div><div></div><div></div></div>
+    </div></div>
+  </div>
+</section>
+<section id="communication" class="panel">
+  <div class="card">
+    <h2>遠隔のやりとり：プラットフォーム内でもZoomでも可</h2>
+    <p class="muted">MVPでは、診療・リハビリそのものを内製するよりも、データ共有・面談導線・記録保存を優先。ビデオ通話はプラットフォーム内または外部Zoom連携の両方を想定する。</p>
+    <div class="comm-grid">
+      <div class="comm-card"><h3>A ↔ C</h3><div class="comm-visual">👤 ↔ 👨‍⚕️</div><p>患者と専門家の相談。症状悪化時、リハビリ継続支援、生活指導に使用。</p><div class="call-options"><span>アプリ内通話</span><span>Zoom</span><span>チャット</span></div></div>
+      <div class="comm-card"><h3>B ↔ C</h3><div class="comm-visual">🏥 ↔ 👨‍⚕️</div><p>遠隔地医療者が検査結果や撮影条件を専門家に確認。検査品質、赤旗、対面受診基準を相談。</p><div class="call-options"><span>検査確認</span><span>Zoom</span><span>コメント</span></div></div>
+      <div class="comm-card"><h3>A + B ↔ C</h3><div class="comm-visual">👤🏥 ↔ 👨‍⚕️</div><p>患者が来院中にBが支援し、Cが遠隔参加。D to P with D/Nに近い運用。</p><div class="call-options"><span>三者通話</span><span>リハビリ指導</span><span>同意記録</span></div></div>
+    </div>
+  </div>
+</section>
+<section id="research" class="panel">
+  <div class="grid grid2">
+    <div class="card">
+      <h2>v0.3 MVPで決めること</h2>
+      <table>
+        <tr><th>論点</th><th>初期仮説</th></tr>
+        <tr><td>Aの記録頻度</td><td>毎日が理想。最低でも1〜2日に1回。発作時は随時眼振動画。</td></tr>
+        <tr><td>Bの検査頻度</td><td>来院時で可。1〜2週〜1か月に1回。</td></tr>
+        <tr><td>Bの端末</td><td>同じiPhone、別iPad、施設PC入力の3パターンを許容。</td></tr>
+        <tr><td>Cのレビュー</td><td>A/Bデータを時系列で確認し、相談・リハビリ・受診要否を判断。</td></tr>
+        <tr><td>通話機能</td><td>内製にこだわらず、Zoom連携でも可。データ共有と記録を優先。</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h2>検証KPI</h2>
+      <div class="grid grid2">
+        <div class="metric"><strong>70%+</strong><span>A 14日間記録継続率</span></div>
+        <div class="metric"><strong>80%+</strong><span>眼振動画の品質合格率</span></div>
+        <div class="metric"><strong>15分以内</strong><span>Cの診療前レビュー時間</span></div>
+        <div class="metric"><strong>80%+</strong><span>B検査入力完了率</span></div>
+      </div>
+      <p class="footer-note">※数値はMVP検証用の仮説。共同研究者ヒアリングで修正する。</p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h2>共同研究者に確認したいこと</h2>
+    <ul>
+      <li>Aの毎日記録で必須にする項目は何か。入力負担をどこまで減らすか。</li>
+      <li>Bが実施する検査の最小構成は、SVV、vHIT、OKN、ETTのうち何から始めるか。</li>
+      <li>ゴーグル検査は患者単独、B支援、家族支援のどこまで許容するか。</li>
+      <li>Cが初見で見たい時系列指標は、症状、眼振、SVV、vHIT、服薬、リハビリのどれか。</li>
+      <li>プラットフォーム内通話とZoom連携のどちらをMVPに含めるか。</li>
+    </ul>
+  </div>
+</section>
+</main>
+<script>
+function openPanel(id){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelector(`.tab[data-panel="${id}"]`).classList.add('active');
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>openPanel(btn.dataset.panel)));
+</script>
+</body>
+</html>
