@@ -6,4 +6,4 @@ period_start,period_end,visits,observed_days,status
 2026-10-19,2026-10-25,47,7,complete
 2026-10-26,2026-11-01,59,7,complete
 2026-11-02,2026-11-08,23,7,complete
-2026-11-09,2026-11-15,15,2,partial
+2026-11-09,2026-11-15,42,4,partial
